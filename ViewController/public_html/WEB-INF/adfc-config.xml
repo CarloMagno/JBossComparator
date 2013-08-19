@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <managed-bean id="__3">
+    <managed-bean-name id="__4">backing_comparator</managed-bean-name>
+    <managed-bean-class id="__1">jbosscomp.view.backing.Comparator</managed-bean-class>
+    <managed-bean-scope id="__2">backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1comparator.jspx-->
+  </managed-bean>
+</adfc-config>
