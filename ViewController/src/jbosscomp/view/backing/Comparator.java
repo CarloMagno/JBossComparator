@@ -4,6 +4,9 @@ package jbosscomp.view.backing;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.component.UIViewRoot;
+import javax.faces.context.FacesContext;
+
 import oracle.adf.view.faces.bi.component.graph.UIGraph;
 import oracle.adf.view.rich.component.rich.RichDocument;
 import oracle.adf.view.rich.component.rich.RichForm;
@@ -71,14 +74,27 @@ public class Comparator {
     private UIGraph barGraph1;
     private RichPanelBorderLayout pbl1;
 
+    private static Double costY1 = 0.0;
+    private static Double costY2;
+    private static Double costY3;
 
-    public List getTabularData() {
+
+    public List getTabularData() {       
+        if(totalCostY1 == null)costY1 = new Double((String)totalCostY1.getValue());
+        else costY1++;
+
+        if(totalCostY2 == null)costY2 = new Double((String)totalCostY2.getValue());
+        else costY2 = 0.0;
+        
+        if(totalCostY3 == null)costY3 = new Double((String)totalCostY3.getValue());
+        else costY3 = 0.0;
+        
         ArrayList list = new ArrayList();
         String[] rowLabels  = new String[] {"Oracle", "JBoss"};
         String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3"};
         Double [] [] values = new Double[][]{
-            {new Double((String)totalCostY1.getValue()), new Double((String)totalCostY2.getValue()), new Double((String)totalCostY3.getValue())},
-            {1000.0, 2000.0, 3000.0}
+            {costY1, costY2, costY3},
+            {1.0, 2.0, 3.0}
             };
         for (int c = 0; c < colLabels.length; c++)
         {
