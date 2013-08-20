@@ -9,6 +9,7 @@ import oracle.adf.view.rich.component.rich.RichDocument;
 import oracle.adf.view.rich.component.rich.RichForm;
 import oracle.adf.view.rich.component.rich.fragment.RichPageTemplate;
 import oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox;
+import oracle.adf.view.rich.component.rich.layout.RichPanelBorderLayout;
 import oracle.adf.view.rich.component.rich.layout.RichPanelBox;
 import oracle.adf.view.rich.component.rich.layout.RichPanelGroupLayout;
 import oracle.adf.view.rich.component.rich.layout.RichPanelTabbed;
@@ -67,14 +68,17 @@ public class Comparator {
     private RichInputNumberSpinbox totalCostY3;
     private RichShowDetailItem sdi2;
     private RichShowDetailItem sdi3;
-    
+    private UIGraph barGraph1;
+    private RichPanelBorderLayout pbl1;
+
+
     public List getTabularData() {
         ArrayList list = new ArrayList();
         String[] rowLabels  = new String[] {"Oracle", "JBoss"};
         String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3"};
         Double [] [] values = new Double[][]{
-            {120000.0, 122000.0, 175000.0},
-            {90000.0, 110000.0, 150000.0}
+            {new Double((String)totalCostY1.getValue()), new Double((String)totalCostY2.getValue()), new Double((String)totalCostY3.getValue())},
+            {1000.0, 2000.0, 3000.0}
             };
         for (int c = 0; c < colLabels.length; c++)
         {
@@ -496,5 +500,22 @@ public class Comparator {
 
     public RichPageTemplate getPt1() {
         return pt1;
+    }
+
+
+    public void setBarGraph1(UIGraph barGraph1) {
+        this.barGraph1 = barGraph1;
+    }
+
+    public UIGraph getBarGraph1() {
+        return barGraph1;
+    }
+
+    public void setPbl1(RichPanelBorderLayout pbl1) {
+        this.pbl1 = pbl1;
+    }
+
+    public RichPanelBorderLayout getPbl1() {
+        return pbl1;
     }
 }

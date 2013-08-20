@@ -280,6 +280,28 @@
                         </af:panelBox>
                       </af:panelGroupLayout>
                     </div>
+                    <af:panelBorderLayout binding="#{backingBeanScope.backing_comparator.pbl1}"
+                                          id="pbl1"
+                                          partialTriggers="totalSuppY1 totalCostY1 suppCostY1 totalLicenseY1 licenseDiscY1 licenseCostY1 totalProcY1 coreFactorY1 coresProcY1 newProcY1 exProcY1 totalSuppY2 suppCostY2 totalCostY2 totalLicenseY2 licenseDiscY2 licenseCostY2 totalProcY2 coreFactorY2 coresProcY2 newProcY2 exProcY2 totalLicenseY3 totalCostY3 licenseDiscY3 totalSuppY3 suppCostY3 licenseCostY3 totalProcY3 coreFactorY3 coresProcY3 newProcY3 exProcY3">
+                      <f:facet name="start"/>
+                      <f:facet name="bottom"/>
+                      <f:facet name="end"/>
+                      <f:facet name="top"/>
+                      <dvt:barGraph id="barGraph1" subType="BAR_VERT_CLUST"
+                                    binding="#{backingBeanScope.backing_comparator.barGraph1}"
+                                    tabularData="#{backingBeanScope.backing_comparator.tabularData}">
+                        <dvt:background>
+                          <dvt:specialEffects/>
+                        </dvt:background>
+                        <dvt:graphPlotArea/>
+                        <dvt:seriesSet>
+                          <dvt:series/>
+                        </dvt:seriesSet>
+                        <dvt:o1Axis/>
+                        <dvt:y1Axis/>
+                        <dvt:legendArea automaticPlacement="AP_NEVER"/>
+                      </dvt:barGraph>
+                    </af:panelBorderLayout>
                   </af:panelGroupLayout>
                 </div>
               </af:showDetailItem>
