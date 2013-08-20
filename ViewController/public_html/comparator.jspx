@@ -1,7 +1,3 @@
-<!--
-    author: Juan Carlos Ruiz Rico <juan.carlos.ruiz.rico@oracle.com>
--->
-
 <?xml version='1.0' encoding='UTF-8'?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:f="http://java.sun.com/jsf/core"
@@ -120,7 +116,8 @@
                           <div align="right">
                             <af:inputNumberSpinbox label="Existing processors"
                                                    binding="#{backingBeanScope.backing_comparator.exProcY2}"
-                                                   id="exProcY2" value="0"/>
+                                                   id="exProcY2" value="0"
+                                                   autoSubmit="true"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="New processors"
@@ -138,43 +135,52 @@
                             <af:inputNumberSpinbox label="Oracle Core Factor"
                                                    binding="#{backingBeanScope.backing_comparator.coreFactorY2}"
                                                    id="coreFactorY2" stepSize="0.1"
+                                                   autoSubmit="true"
                                                    value="0"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Total Oracle processors"
                                                    binding="#{backingBeanScope.backing_comparator.totalProcY2}"
-                                                   id="totalProcY2" value="0"/>
+                                                   id="totalProcY2" 
+                                                   value="#{(backingBeanScope.backing_comparator.exProcY2.value + backingBeanScope.backing_comparator.newProcY2.value) * backingBeanScope.backing_comparator.coresProcY2.value * backingBeanScope.backing_comparator.coreFactorY2.value}"
+                                                   partialTriggers="coreFactorY2 coresProcY2 newProcY2 exProcY2"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Oracle license costs"
                                                    binding="#{backingBeanScope.backing_comparator.licenseCostY2}"
-                                                   id="licenseCostY2" value="0"/>
+                                                   id="licenseCostY2" 
+                                                   value="0" autoSubmit="true" 
+                                                   stepSize="1000"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="License discount (%)"
                                                    binding="#{backingBeanScope.backing_comparator.licenseDiscY2}"
-                                                   id="licenseDiscY2" value="0"/>
+                                                   id="licenseDiscY2" value="0"
+                                                   autoSubmit="true"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Total license costs"
                                                    binding="#{backingBeanScope.backing_comparator.totalLicenseY2}"
                                                    id="totalLicenseY2"
                                                    inlineStyle="color:Maroon;"
-                                                   value="0"/>
+                                                   value="#{(backingBeanScope.backing_comparator.licenseCostY2.value * backingBeanScope.backing_comparator.totalProcY2.value) - (backingBeanScope.backing_comparator.licenseCostY2.value * backingBeanScope.backing_comparator.totalProcY2.value * backingBeanScope.backing_comparator.licenseDiscY2.value div 100.0)}"
+                                                   partialTriggers="licenseDiscY2 totalProcY2 coresProcY2 licenseCostY2 coreFactorY2 newProcY2 exProcY2"/>
                           </div>
                           <af:separator binding="#{backingBeanScope.backing_comparator.s3}"
                                         id="s3"/>
                           <div align="right">
                             <af:inputNumberSpinbox label="Support license (%)"
                                                    binding="#{backingBeanScope.backing_comparator.suppCostY2}"
-                                                   id="suppCostY2" value="0"/>
+                                                   id="suppCostY2" value="0"
+                                                   autoSubmit="true"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Total support cost"
                                                    binding="#{backingBeanScope.backing_comparator.totalSuppY2}"
                                                    id="totalSuppY2"
                                                    inlineStyle="color:Maroon;"
-                                                   value="0"/>
+                                                   value="#{backingBeanScope.backing_comparator.totalLicenseY2.value * backingBeanScope.backing_comparator.suppCostY2.value div 100}"
+                                                   partialTriggers="suppCostY2 totalLicenseY2 licenseDiscY2 licenseCostY2 totalProcY2 coreFactorY2 coresProcY2 newProcY2 exProcY2"/>
                           </div>
                           <af:separator binding="#{backingBeanScope.backing_comparator.s10}"
                                         id="s10"/>
@@ -183,7 +189,8 @@
                                                    binding="#{backingBeanScope.backing_comparator.totalCostY2}"
                                                    id="totalCostY2"
                                                    inlineStyle="color:Maroon;"
-                                                   value="0"/>
+                                                   value="#{backingBeanScope.backing_comparator.totalSuppY2.value + backingBeanScope.backing_comparator.totalLicenseY2.value}"
+                                                   partialTriggers="exProcY2 newProcY2 coresProcY2 coreFactorY2 totalProcY2 licenseCostY2 licenseDiscY2 suppCostY2 totalSuppY2"/>
                           </div>
                         </af:panelBox>
                         <af:panelBox text="Year 3"
@@ -220,38 +227,45 @@
                             <af:inputNumberSpinbox label="Total Oracle processors"
                                                    binding="#{backingBeanScope.backing_comparator.totalProcY3}"
                                                    id="totalProcY3"
-                                                   value="0"/>
+                                                   value="#{(backingBeanScope.backing_comparator.exProcY3.value + backingBeanScope.backing_comparator.newProcY3.value) * backingBeanScope.backing_comparator.coresProcY3.value * backingBeanScope.backing_comparator.coreFactorY3.value}"
+                                                   partialTriggers="coreFactorY3 coresProcY3 newProcY3 exProcY3"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Oracle license costs"
                                                    binding="#{backingBeanScope.backing_comparator.licenseCostY3}"
-                                                   id="licenseCostY3" value="0"/>
+                                                   id="licenseCostY3" value="0"
+                                                   stepSize="1000"
+                                                   autoSubmit="true"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="License discount (%)"
                                                    binding="#{backingBeanScope.backing_comparator.licenseDiscY3}"
-                                                   id="licenseDiscY3" value="0"/>
+                                                   id="licenseDiscY3" value="0"
+                                                   autoSubmit="true"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Total license costs"
                                                    binding="#{backingBeanScope.backing_comparator.totalLicenseY3}"
                                                    id="totalLicenseY3"
                                                    inlineStyle="color:Maroon;"
-                                                   value="0"/>
+                                                   value="#{(backingBeanScope.backing_comparator.licenseCostY3.value * backingBeanScope.backing_comparator.totalProcY3.value) - (backingBeanScope.backing_comparator.licenseCostY3.value * backingBeanScope.backing_comparator.totalProcY3.value * backingBeanScope.backing_comparator.licenseDiscY3.value div 100.0)}"
+                                                   partialTriggers="licenseDiscY3 totalProcY3 coresProcY3 licenseCostY3 coreFactorY3 newProcY3 exProcY3"/>
                           </div>
                           <af:separator binding="#{backingBeanScope.backing_comparator.s11}"
                                         id="s11"/>
                           <div align="right">
                             <af:inputNumberSpinbox label="Support license (%)"
                                                    binding="#{backingBeanScope.backing_comparator.suppCostY3}"
-                                                   id="suppCostY3" value="0"/>
+                                                   id="suppCostY3" value="0"
+                                                   autoSubmit="true"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Total support cost"
                                                    binding="#{backingBeanScope.backing_comparator.totalSuppY3}"
                                                    id="totalSuppY3"
                                                    inlineStyle="color:Maroon;"
-                                                   value="0"/>
+                                                   value="#{backingBeanScope.backing_comparator.totalLicenseY3.value * backingBeanScope.backing_comparator.suppCostY3.value div 100}"
+                                                   partialTriggers="suppCostY3 totalLicenseY3 licenseDiscY3 licenseCostY3 totalProcY3 coreFactorY3 coresProcY3 newProcY3 exProcY3"/>
                           </div>
                           <af:separator binding="#{backingBeanScope.backing_comparator.s12}"
                                         id="s12"/>
@@ -260,7 +274,8 @@
                                                    binding="#{backingBeanScope.backing_comparator.totalCostY3}"
                                                    id="totalCostY3"
                                                    inlineStyle="color:Maroon;"
-                                                   value="0"/>
+                                                   value="#{backingBeanScope.backing_comparator.totalSuppY3.value + backingBeanScope.backing_comparator.totalLicenseY3.value}"
+                                                   partialTriggers="exProcY3 newProcY3 coresProcY3 coreFactorY3 totalProcY3 licenseCostY3 licenseDiscY3 suppCostY3 totalSuppY3"/>
                           </div>
                         </af:panelBox>
                       </af:panelGroupLayout>

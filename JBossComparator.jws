@@ -4,6 +4,7 @@
       <value n="adrs-instance-binding" v="DefaultServer"/>
    </hash>
    <value n="application-package-prefix" v="jbosscomp"/>
+   <url n="application-source-directory" path="src/"/>
    <value n="appTemplateId" v="adfWebappApplicationTemplate"/>
    <hash n="component-versions">
       <value n="oracle.adf.share.dt.migration.jps.JaznCredStoreMigratorHelper" v="11.1.1.1.0"/>
@@ -29,8 +30,15 @@
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
+            <value n="defaultConnection"/>
             <hash n="dependencies">
                <list n="dependencyList">
+                  <hash>
+                     <value n="adapterClass" v="oracle.jdevimpl.deploy.common.DefaultProfileDependable"/>
+                     <url n="ownerURL" path="Model/Model.jpr"/>
+                     <value n="pathInEar" v=""/>
+                     <value n="profileName" v="JBossComparator_Model_adflibJBossComparator1"/>
+                  </hash>
                   <hash>
                      <value n="adapterClass" v="oracle.jdevimpl.deploy.common.DefaultProfileDependable"/>
                      <url n="ownerURL" path="ViewController/ViewController.jpr"/>
@@ -79,6 +87,12 @@
       </hash>
       <list n="profileList">
          <string v="JBossComparator_application1"/>
+      </list>
+      <value n="Weblogic-JDBC-Auto-Sync-Key" v="false"/>
+   </hash>
+   <hash n="oracle.mds.internal.dt.ide.CustOptions">
+      <list n="customizationLibraries">
+         <hash/>
       </list>
    </hash>
 </jws:workspace>
