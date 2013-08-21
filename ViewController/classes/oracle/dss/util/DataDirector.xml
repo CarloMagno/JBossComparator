@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DataDirector" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.DataDirector" isJavaBased="true">
+  <AccessorAttribute id="dataAccess" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataAccess"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="supportedMetadataMap" IsCollection="true"
+                     Type="oracle.dss.util.MetadataMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="supportedLayerMetadataMap" IsCollection="true"
+                     Type="oracle.dss.util.LayerMetadataMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="supportedDataMap" IsCollection="true"
+                     Type="oracle.dss.util.DataMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="dataMap" IsCollection="true"
+                     Type="oracle.dss.util.DataMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="sorts" IsCollection="true"
+                     BeanClass="oracle.dss.util.SortInfo"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="columnSorts" IsCollection="true"
+                     BeanClass="oracle.dss.util.ColumnSortInfo"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="expressions" IsCollection="true"
+                     Type="java.lang.Object[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.Object"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="dimensionSorts" IsCollection="true"
+                     BeanClass="oracle.dss.util.DimensionSortInfo"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="memberSorts" IsCollection="true"
+                     BeanClass="oracle.dss.util.MemberSortInfo"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="status" IsCollection="false"
+                     BeanClass="oracle.dss.util.StatusInfo"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="cancel"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="changeEdgeCurrentSlice" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="changeEdgeCurrentHPos"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="refresh"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="release"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drill"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drill"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drill"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drill"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drillOK"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drillOK"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drillOK"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drillOK"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="pivot"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="pivotOK"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="reorder"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="insertValueCalc"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="insertMemberCalc"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="deleteValueCalc"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="deleteMemberCalc"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addDataDirectorListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataDirectorListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="removeDataDirectorListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataDirectorListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="revalidate"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setMetadataMap"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="oracle.dss.util.MetadataMap"
+                   isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDataMap"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataMap" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true" Type="oracle.dss.util.MetadataMap"
+                  id="getMetadataMap" ReturnNodeName="returnValue"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCancelable"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setManualUpdate"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="update"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setOutline"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isOutline"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="getProperty"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setProperty"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setSorts"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.SortInfo[]"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setColumnSorts"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.ColumnSortInfo[]"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="pivotCheck"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true" Type="java.lang.Object[][]"
+                  id="getCompatibleDataItemMetadata" ReturnNodeName="Object"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="p0" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String[]" isStructured="false"/>
+    <Attribute Name="element" Type="java.lang.Object"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true" Type="java.lang.String[]"
+                  id="setExpressions" ReturnNodeName="String"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="p0" Type="java.lang.Object[]" isStructured="false"/>
+    <Attribute Name="element" Type="java.lang.String"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setDimensionSorts"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DimensionSortInfo[]"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setMemberSorts"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.MemberSortInfo[]"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="fireEvents"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.util.StatusInfo"
+                  BeanClass="oracle.dss.util.StatusInfo" id="startExecution"
+                  ReturnNodeName="StatusInfo"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setLayerMetadata"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

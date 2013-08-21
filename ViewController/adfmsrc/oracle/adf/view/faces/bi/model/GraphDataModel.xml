@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="GraphDataModel" Package="oracle.adf.view.faces.bi.model"
+          BeanClass="oracle.adf.view.faces.bi.model.GraphDataModel"
+          isJavaBased="true">
+  <Attribute Name="cellData" IsUpdateable="0" Type="java.lang.Object"/>
+  <Attribute Name="rowCount" IsUpdateable="0" Type="int"/>
+  <Attribute Name="columnCount" IsUpdateable="0" Type="int"/>
+  <Attribute Name="ADSType" Type="int"/>
+  <AccessorAttribute id="dataMap" IsCollection="true"
+                     Type="oracle.dss.util.DataMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="dataSource" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataSource"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataDirector" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataDirector"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataAccess" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataAccess"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="cellKey" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.model.CellKey"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="cellIndex" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.model.CellIndex"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="processClick"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.ClickEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true" Type="oracle.dss.util.MetadataMap"
+                  id="getMetadataMap" ReturnNodeName="returnValue"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true" Type="oracle.dss.util.LayerMetadataMap"
+                  id="getLayerMetadataMap" ReturnNodeName="returnValue"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataMediumLabelSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataMediumLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataShortLabelSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataShortLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataViewStyleSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataViewStyleSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataLongLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataValueSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataUniqueValueSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataUniqueValueSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDisplaynameSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDisplaynameSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataFormatSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataFormatSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataRelhierinfoSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataRelhierinfoSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataPositionSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataPositionSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataParentSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataParentSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataUniqueParentSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataUniqueParentSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillParentLonglabelSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillParentLonglabelSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillParentMediumlabelSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillParentMediumlabelSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillParentShortlabelSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillParentShortlabelSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillParentDatespanSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillParentDatespanSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataLevelSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataLevelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataLevelLabelSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataLevelLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataLevelNameSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataLevelNameSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDatespanSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDatespanSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataCurdrillpathSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataCurdrillpathSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataCurdrilltargetSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataCurdrilltargetSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDatatypeSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDatatypeSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataIstotalSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataIstotalSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataHierarchySupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataHierarchySupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataBlockSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataBlockSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataQueryparentSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataQueryparentSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataChildcountSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataChildcountSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaLongLabelSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaLongLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaMediumLabelSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaMediumLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaShortLabelSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaShortLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaNameSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaNameSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataGroupsortSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataUnformattedSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataFormattedSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDataTypeSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDataRatioSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataViewStyleSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataViewFormatSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataAnnotationSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDataNameSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataIstotalSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataRelIndentSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataRelIndentSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillParentDateSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillParentDateSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillParentDateSpanSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillParentDateSpanSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataIsTotalSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataIsTotalSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDrillPathsSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDrillPathsSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaMeasureSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaMeasureSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaDrillPathsSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaDisplaynameSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaDisplaynameSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaHierarchicalSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaHierarchicalLabelSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaCanpivotSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaNameCanpivotSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaLonglabelPluralSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaNameLonglabelPluralSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaShortlabelPluralSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaShortlabelPluralSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaDrillpathsSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaNameDrillpathsSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaCurdrillpathSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaCurdrillpathSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaCurdrilltargetSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaCurdrilltargetSupported"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaDrillstateSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaDrillstateSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaViewstyleSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaViewstyleSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setMetadataDateSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDateSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMetadataDateSpanSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataDateSpanSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataIndentSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetaViewStyleSupported" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaViewStyleSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="getCellData"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.model.CellIndex"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCellAvailable"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCellAvailable"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.model.CellIndex"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.adf.view.faces.bi.model.CellKey"
+                  BeanClass="oracle.adf.view.faces.bi.model.CellKey"
+                  id="getCellKey" ReturnNodeName="CellKey">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.model.CellIndex"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isRangeLocallyAvailable" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.model.DataCellIndex"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.adf.view.faces.bi.model.GraphDataModel"
+                     BeanClass="oracle.adf.view.faces.bi.model.GraphDataModel"
+                     id="GraphDataModel">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataSource"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.adf.view.faces.bi.model.GraphDataModel"
+                     BeanClass="oracle.adf.view.faces.bi.model.GraphDataModel"
+                     id="GraphDataModel"/>
+</JavaBean>

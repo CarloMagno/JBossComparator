@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ComponentAttribute" Package="oracle.dss.util.persistence"
+          BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+          isJavaBased="true">
+  <Attribute Name="name" IsUpdateable="0" Type="java.lang.String"/>
+  <AccessorAttribute id="values" IsCollection="true"
+                     BeanClass="oracle.dss.util.persistence.AttributeValue"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="add"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Long" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.util.Date" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Boolean" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Short" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Integer" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Float" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Double" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Character" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Byte" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttribute"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                     id="ComponentAttribute">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

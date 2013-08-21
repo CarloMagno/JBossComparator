@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="SearchControls" Package="javax.naming.directory"
+          BeanClass="javax.naming.directory.SearchControls" isJavaBased="true">
+  <Attribute Name="searchScope" Type="int"/>
+  <Attribute Name="timeLimit" Type="int"/>
+  <Attribute Name="derefLinkFlag" Type="boolean"/>
+  <Attribute Name="returningObjFlag" Type="boolean"/>
+  <Attribute Name="countLimit" Type="long"/>
+  <AccessorAttribute id="returningAttributes" IsCollection="true"
+                     Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <ConstructorMethod IsCollection="true"
+                     Type="javax.naming.directory.SearchControls"
+                     BeanClass="javax.naming.directory.SearchControls"
+                     id="SearchControls">
+    <ParameterInfo id="scope" Type="int" isStructured="false"/>
+    <ParameterInfo id="countlim" Type="long" isStructured="false"/>
+    <ParameterInfo id="timelim" Type="int" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="retobj" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="deref" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="javax.naming.directory.SearchControls"
+                     BeanClass="javax.naming.directory.SearchControls"
+                     id="SearchControls"/>
+</JavaBean>

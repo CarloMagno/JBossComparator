@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ErrorHandler" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.ErrorHandler" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="error"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Throwable" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="log"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="trace"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="TickLabelInfo" Package="oracle.dss.graph"
+          BeanClass="oracle.dss.graph.TickLabelInfo" isJavaBased="true">
+  <Attribute Name="index" IsUpdateable="0" Type="int"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.graph.TickLabelInfo"
+                     BeanClass="oracle.dss.graph.TickLabelInfo"
+                     id="TickLabelInfo">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

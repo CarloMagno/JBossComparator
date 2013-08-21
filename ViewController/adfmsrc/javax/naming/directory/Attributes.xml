@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Attributes" Package="javax.naming.directory"
+          BeanClass="javax.naming.directory.Attributes" isJavaBased="true">
+  <AccessorAttribute id="all" IsCollection="true"
+                     Type="javax.naming.NamingEnumeration&lt;? extends javax.naming.directory.Attribute>"
+                     CollectionBeanClass="UpdateableSingleValue">
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;? extends javax.naming.directory.Attribute>"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="IDs" IsCollection="true"
+                     Type="javax.naming.NamingEnumeration&lt;java.lang.String>"
+                     CollectionBeanClass="UpdateableSingleValue">
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;java.lang.String>"/>
+  </AccessorAttribute>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCaseIgnored"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="int" id="size"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attribute"
+                  BeanClass="javax.naming.directory.Attribute" id="get"
+                  ReturnNodeName="Attribute">
+    <ParameterInfo id="attrID" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attribute"
+                  BeanClass="javax.naming.directory.Attribute" id="put"
+                  ReturnNodeName="Attribute">
+    <ParameterInfo id="attrID" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="val" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attribute"
+                  BeanClass="javax.naming.directory.Attribute" id="put"
+                  ReturnNodeName="Attribute">
+    <ParameterInfo id="attr" Type="javax.naming.directory.Attribute"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attribute"
+                  BeanClass="javax.naming.directory.Attribute" id="remove"
+                  ReturnNodeName="Attribute">
+    <ParameterInfo id="attrID" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+</JavaBean>

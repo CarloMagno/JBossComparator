@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ZoomAndScrollListener" Package="oracle.adf.view.faces.bi.event"
+          BeanClass="oracle.adf.view.faces.bi.event.ZoomAndScrollListener"
+          isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="processZoomAndScroll"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.ZoomAndScrollEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

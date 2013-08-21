@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="MemberContext" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.MemberContext" isJavaBased="true">
+  <Attribute Name="dimID" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="dimIndex" IsUpdateable="0" Type="int"/>
+  <Attribute Name="memberCount" IsUpdateable="0" Type="int"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getMemberID"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="getMemberIndex"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.MemberContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

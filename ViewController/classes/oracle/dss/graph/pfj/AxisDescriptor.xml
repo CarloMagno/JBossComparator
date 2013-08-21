@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="AxisDescriptor" Package="oracle.dss.graph.pfj"
+          BeanClass="oracle.dss.graph.pfj.AxisDescriptor" isJavaBased="true">
+  <Attribute Name="YAxisCount" IsUpdateable="0" Type="int"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasO1"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasO2"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasX1"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasY1"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasY2"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasZ1"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasY3"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasY4"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasY5"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.graph.pfj.AxisDescriptor"
+                     BeanClass="oracle.dss.graph.pfj.AxisDescriptor"
+                     id="AxisDescriptor">
+    <ParameterInfo id="p0" Type="oracle.dss.graph.pfj.AxisDescriptor"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.graph.pfj.AxisDescriptor"
+                     BeanClass="oracle.dss.graph.pfj.AxisDescriptor"
+                     id="AxisDescriptor">
+    <ParameterInfo id="p0" Type="oracle.dss.graph.pfj.AxisDescriptor"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="oracle.dss.graph.pfj.NYDescriptor"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.graph.pfj.AxisDescriptor"
+                     BeanClass="oracle.dss.graph.pfj.AxisDescriptor"
+                     id="AxisDescriptor">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p2" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p3" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p4" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p5" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p6" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p7" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p8" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

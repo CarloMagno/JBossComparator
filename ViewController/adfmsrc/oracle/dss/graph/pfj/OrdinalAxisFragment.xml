@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="OrdinalAxisFragment" Package="oracle.dss.graph.pfj"
+          BeanClass="oracle.dss.graph.pfj.OrdinalAxisFragment"
+          isJavaBased="true">
+  <Attribute Name="ordinalCount" IsUpdateable="0" Type="int"/>
+  <Attribute Name="ordinalOffset" IsUpdateable="0" Type="int"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.graph.pfj.OrdinalAxisFragment"
+                     BeanClass="oracle.dss.graph.pfj.OrdinalAxisFragment"
+                     id="OrdinalAxisFragment">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

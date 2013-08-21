@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Name" Package="javax.naming" BeanClass="javax.naming.Name"
+          isJavaBased="true">
+  <Attribute Name="all" IsUpdateable="0"
+             Type="java.util.Enumeration&lt;java.lang.String>"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="int" id="compareTo"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="size"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isEmpty"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="get"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="posn" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="getPrefix"
+                  ReturnNodeName="Name">
+    <ParameterInfo id="posn" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="getSuffix"
+                  ReturnNodeName="Name">
+    <ParameterInfo id="posn" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startsWith"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="n" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="endsWith"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="n" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="addAll"
+                  ReturnNodeName="Name">
+    <ParameterInfo id="suffix" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="addAll"
+                  ReturnNodeName="Name">
+    <ParameterInfo id="posn" Type="int" isStructured="false"/>
+    <ParameterInfo id="n" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="add" ReturnNodeName="Name">
+    <ParameterInfo id="comp" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="add" ReturnNodeName="Name">
+    <ParameterInfo id="posn" Type="int" isStructured="false"/>
+    <ParameterInfo id="comp" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="remove"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="posn" Type="int" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

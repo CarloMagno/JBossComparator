@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Persistable" Package="oracle.dss.util.persistence"
+          BeanClass="oracle.dss.util.persistence.Persistable"
+          isJavaBased="true">
+  <Attribute Name="XMLAsString" IsUpdateable="0" Type="java.lang.String"/>
+  <AccessorAttribute id="persistableComponents" IsCollection="true"
+                     BeanClass="oracle.dss.util.persistence.AggregateInfo"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="false" Type="void" id="initialize"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.util.Hashtable" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.dss.util.persistence.PersistableAttributes"
+                  BeanClass="oracle.dss.util.persistence.PersistableAttributes"
+                  id="getPersistableAttributes"
+                  ReturnNodeName="PersistableAttributes">
+    <ParameterInfo id="p0"
+                   Type="oracle.dss.util.persistence.PersistableAttributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setPersistableAttributes"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.dss.util.persistence.PersistableAttributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setXMLAsString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

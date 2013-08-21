@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DataType" Package="oracle.dss.graph"
+          BeanClass="oracle.dss.graph.DataType" isJavaBased="true">
+  <MethodAccessor IsCollection="true" Type="oracle.dss.graph.DataType"
+                  BeanClass="oracle.dss.graph.DataType" id="values"
+                  ReturnNodeName="DataType"
+                  CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.graph.DataType"
+                  BeanClass="oracle.dss.graph.DataType" id="valueOf"
+                  ReturnNodeName="DataType">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

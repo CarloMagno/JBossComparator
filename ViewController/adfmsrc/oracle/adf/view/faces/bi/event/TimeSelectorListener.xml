@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="TimeSelectorListener" Package="oracle.adf.view.faces.bi.event"
+          BeanClass="oracle.adf.view.faces.bi.event.TimeSelectorListener"
+          isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="processTimeSelector"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.TimeSelectorEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

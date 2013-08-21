@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Comparison" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.Comparison" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="boolean" id="areLevelIDsEquivalent"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

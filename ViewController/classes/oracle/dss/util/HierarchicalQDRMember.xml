@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="HierarchicalQDRMember" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.HierarchicalQDRMember" isJavaBased="true">
+  <Attribute Name="hierarchy" Type="java.lang.Object"/>
+  <Attribute Name="level" Type="java.lang.Object"/>
+  <Attribute Name="tagName" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="type" Type="int"/>
+  <Attribute Name="data" Type="java.lang.Object"/>
+  <MethodAccessor IsCollection="false" Type="int" id="hashCode"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="getXML"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.persistence.XMLContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setXML"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.persistence.XMLContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true" Type="java.util.Vector"
+                  id="getAllDependentIDs" ReturnNodeName="returnValue"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.NameConverter"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="contains"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.HierarchicalQDRMember"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.Comparison"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="contains"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.HierarchicalQDRMember"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.HierarchicalQDRMember"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.Comparison"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.HierarchicalQDRMember"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.Comparison"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.QDRMember"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="contains"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.QDRMember"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getStateString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.MemberContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.HierarchicalQDRMember"
+                     BeanClass="oracle.dss.util.HierarchicalQDRMember"
+                     id="HierarchicalQDRMember">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.HierarchicalQDRMember"
+                     BeanClass="oracle.dss.util.HierarchicalQDRMember"
+                     id="HierarchicalQDRMember">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.Object" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.HierarchicalQDRMember"
+                     BeanClass="oracle.dss.util.HierarchicalQDRMember"
+                     id="HierarchicalQDRMember">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.HierarchicalQDRMember"
+                     BeanClass="oracle.dss.util.HierarchicalQDRMember"
+                     id="HierarchicalQDRMember">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.HierarchicalQDRMember"
+                     BeanClass="oracle.dss.util.HierarchicalQDRMember"
+                     id="HierarchicalQDRMember"/>
+</JavaBean>

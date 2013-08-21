@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="NYDescriptor" Package="oracle.dss.graph.pfj"
+          BeanClass="oracle.dss.graph.pfj.NYDescriptor" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasYAxis"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="float" id="getOffset"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="float" id="getSize"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.graph.pfj.NYDescriptor"
+                     BeanClass="oracle.dss.graph.pfj.NYDescriptor"
+                     id="NYDescriptor">
+    <ParameterInfo id="p0" Type="boolean[]" isStructured="false"/>
+    <ParameterInfo id="p1" Type="float[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="float[]" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.graph.pfj.NYDescriptor"
+                     BeanClass="oracle.dss.graph.pfj.NYDescriptor"
+                     id="NYDescriptor">
+    <ParameterInfo id="p0" Type="boolean[]" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

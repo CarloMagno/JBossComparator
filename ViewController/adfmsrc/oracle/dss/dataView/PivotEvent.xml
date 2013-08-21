@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="PivotEvent" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.PivotEvent" isJavaBased="true">
+  <Attribute Name="fromEdge" IsUpdateable="0" Type="int"/>
+  <Attribute Name="toEdge" IsUpdateable="0" Type="int"/>
+  <Attribute Name="fromDimension" IsUpdateable="0" Type="int"/>
+  <Attribute Name="toDimension" IsUpdateable="0" Type="int"/>
+  <Attribute Name="fromSlice" IsUpdateable="0" Type="int"/>
+  <Attribute Name="toSlice" IsUpdateable="0" Type="int"/>
+  <Attribute Name="pivotType" IsUpdateable="0" Type="int"/>
+  <Attribute Name="source" IsUpdateable="0" Type="java.lang.Object"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isEdgeSwap"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDimensionSwap"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isMoveAfter"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isMoveBefore"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="consume"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isConsumed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.dataView.PivotEvent"
+                     BeanClass="oracle.dss.dataView.PivotEvent" id="PivotEvent">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+    <ParameterInfo id="p6" Type="int" isStructured="false"/>
+    <ParameterInfo id="p7" Type="int" isStructured="false"/>
+    <ParameterInfo id="p8" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.dataView.PivotEvent"
+                     BeanClass="oracle.dss.dataView.PivotEvent" id="PivotEvent">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.dataView.PivotEvent"
+                     BeanClass="oracle.dss.dataView.PivotEvent" id="PivotEvent">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

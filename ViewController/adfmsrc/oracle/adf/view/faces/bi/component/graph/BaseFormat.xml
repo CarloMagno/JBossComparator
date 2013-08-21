@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="BaseFormat" Package="oracle.adf.view.faces.bi.component.graph"
+          BeanClass="oracle.adf.view.faces.bi.component.graph.BaseFormat"
+          isJavaBased="true">
+  <Attribute Name="scaling" Type="java.lang.String"/>
+  <Attribute Name="autoPrecision" Type="java.lang.String"/>
+  <Attribute Name="id" Type="java.lang.String"/>
+  <Attribute Name="setAttributeIndex" IsUpdateable="0" Type="java.lang.String"/>
+  <AccessorAttribute id="numberFormat" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.util.NumberFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="converter" IsCollection="false"
+                     BeanClass="javax.faces.convert.Converter"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="facesBean" IsCollection="false"
+                     BeanClass="org.apache.myfaces.trinidad.bean.FacesBean"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="parent" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.BIComplexAttributeBase"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setProperty"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="org.apache.myfaces.trinidad.bean.PropertyKey"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="getProperty"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="org.apache.myfaces.trinidad.bean.PropertyKey"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="org.apache.myfaces.trinidad.bean.PropertyKey"
+                  BeanClass="org.apache.myfaces.trinidad.bean.PropertyKey"
+                  id="getPropertyKey" ReturnNodeName="PropertyKey">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="saveState"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="restoreState"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isTransient"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setTransient"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="applyProperties"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.util.HashMap" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isUpdated"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setUpdated"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.adf.view.faces.bi.component.BIComplexAttributeBase"
+                  BeanClass="oracle.adf.view.faces.bi.component.BIComplexAttributeBase"
+                  id="processSetAttribute"
+                  ReturnNodeName="BIComplexAttributeBase">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="processSetAttributeAndAdd" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2"
+                   Type="oracle.adf.view.faces.bi.component.BIComplexAttributeBase"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.adf.view.faces.bi.component.graph.BaseFormat"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.BaseFormat"
+                     id="BaseFormat"/>
+</JavaBean>

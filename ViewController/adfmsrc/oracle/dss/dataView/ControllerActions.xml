@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ControllerActions" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.ControllerActions" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="boolean" id="pivotGestureHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="canPivot"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drillGestureHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="canDrill"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="pageChangeHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="pageChangeHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

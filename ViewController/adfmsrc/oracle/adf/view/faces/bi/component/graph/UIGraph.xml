@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="UIGraph" Package="oracle.adf.view.faces.bi.component.graph"
+          BeanClass="oracle.adf.view.faces.bi.component.graph.UIGraph"
+          isJavaBased="true">
+  <Attribute Name="family" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="rendererType" Type="java.lang.String"/>
+  <Attribute Name="imageFormat" Type="int"/>
+  <Attribute Name="contentDelivery" Type="java.lang.String"/>
+  <Attribute Name="graphType" Type="int"/>
+  <Attribute Name="dataCursor" Type="java.lang.String"/>
+  <Attribute Name="dataCursorBehavior" Type="java.lang.String"/>
+  <Attribute Name="magnifyLens" Type="java.lang.String"/>
+  <Attribute Name="seriesIndex" IsUpdateable="0" Type="int"/>
+  <Attribute Name="groupIndex" IsUpdateable="0" Type="int"/>
+  <Attribute Name="timeZone" Type="java.util.TimeZone"/>
+  <Attribute Name="customLayout" Type="int"/>
+  <Attribute Name="markerShapeAttribute" Type="java.lang.String"/>
+  <Attribute Name="markerColorAttribute" Type="java.lang.String"/>
+  <Attribute Name="markerShapeInLegend" Type="int"/>
+  <Attribute Name="markerTooltipTemplate" Type="java.lang.String"/>
+  <Attribute Name="markerTooltipType" Type="int"/>
+  <Attribute Name="groupTooltipLabelType" Type="int"/>
+  <Attribute Name="seriesTooltipLabelType" Type="int"/>
+  <Attribute Name="scrollbarPresenceGroups" Type="int"/>
+  <Attribute Name="scrollbarPresenceX1" Type="int"/>
+  <Attribute Name="scrollbarPresenceY1" Type="int"/>
+  <Attribute Name="scrollbarPresenceY2" Type="int"/>
+  <Attribute Name="seriesObjectCount" Type="int"/>
+  <Attribute Name="seriesEffect" Type="int"/>
+  <Attribute Name="seriesRolloverBehavior" Type="int"/>
+  <Attribute Name="hideShowSeriesBehavior" Type="int"/>
+  <Attribute Name="hideAndShowBehavior" Type="java.lang.String"/>
+  <Attribute Name="interactiveSliceBehavior" Type="java.lang.String"/>
+  <Attribute Name="stylePath" Type="java.lang.String"/>
+  <Attribute Name="displayGroups" Type="int"/>
+  <Attribute Name="startGroup" Type="int"/>
+  <Attribute Name="zoomDirection" Type="int"/>
+  <Attribute Name="alertsVisibility" Type="int"/>
+  <Attribute Name="annotationsVisibility" Type="int"/>
+  <Attribute Name="x1ReferenceObjectDisplay" Type="int"/>
+  <Attribute Name="y1ReferenceObjectDisplay" Type="int"/>
+  <Attribute Name="y2ReferenceObjectDisplay" Type="int"/>
+  <Attribute Name="seriesReferenceObjectDisplay" Type="int"/>
+  <Attribute Name="timeRangeStart" Type="java.util.Date"/>
+  <Attribute Name="timeRangeEnd" Type="java.util.Date"/>
+  <Attribute Name="explicitTimeRangeStart" Type="java.util.Date"/>
+  <Attribute Name="explicitTimeRangeEnd" Type="java.util.Date"/>
+  <Attribute Name="timeRangeMode" Type="int"/>
+  <Attribute Name="timeRelativeRange" Type="long"/>
+  <Attribute Name="relativeTimeRange" Type="long"/>
+  <Attribute Name="timeAxisType" Type="int"/>
+  <Attribute Name="continuousTimeAxisInterval" Type="int"/>
+  <Attribute Name="timeAxisInterval" Type="int"/>
+  <Attribute Name="funnelViewAngle" Type="double"/>
+  <Attribute Name="funnelRotateAngle" Type="double"/>
+  <Attribute Name="funnelHeightRatio" Type="double"/>
+  <Attribute Name="targetFactor" Type="int"/>
+  <Attribute Name="XMLAsString" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="autoLayout" Type="int"/>
+  <Attribute Name="emptyText" Type="java.lang.String"/>
+  <Attribute Name="noDataErrorText" Type="java.lang.String"/>
+  <Attribute Name="barShape" Type="int"/>
+  <Attribute Name="imageSource" Type="java.lang.String"/>
+  <Attribute Name="imageWidth" Type="int"/>
+  <Attribute Name="imageHeight" Type="int"/>
+  <Attribute Name="shortDesc" Type="java.lang.String"/>
+  <Attribute Name="svgFontEmbedding" Type="int"/>
+  <Attribute Name="svgParentFormClientId" Type="java.lang.String"/>
+  <Attribute Name="svgDisposition" Type="int"/>
+  <Attribute Name="disposition" Type="int"/>
+  <Attribute Name="otherProperties" Type="java.lang.String"/>
+  <Attribute Name="rendersChildren" IsUpdateable="0" Type="boolean"/>
+  <Attribute Name="inlineStyle" Type="java.lang.String"/>
+  <Attribute Name="styleClass" Type="java.lang.String"/>
+  <Attribute Name="dynamicResize" Type="java.lang.String"/>
+  <Attribute Name="customizationId" Type="java.lang.String"/>
+  <Attribute Name="animationOnDataChange" Type="int"/>
+  <Attribute Name="animationIndicators" Type="int"/>
+  <Attribute Name="animationDuration" Type="int"/>
+  <Attribute Name="animationOnDisplay" Type="int"/>
+  <Attribute Name="visualEffects" Type="int"/>
+  <Attribute Name="flashDefaultFontLoading" Type="int"/>
+  <Attribute Name="dataUpdateHint" Type="java.lang.String"/>
+  <Attribute Name="actionType" Type="java.lang.Object"/>
+  <Attribute Name="value" Type="java.lang.Object"/>
+  <Attribute Name="description" Type="java.lang.String"/>
+  <Attribute Name="zoomFactor" IsUpdateable="0" Type="int"/>
+  <Attribute Name="suppressFontName" Type="int"/>
+  <Attribute Name="memberMetadataLabelType" Type="java.lang.String"/>
+  <Attribute Name="layerMetadataLabelType" Type="java.lang.String"/>
+  <Attribute Name="localValue" IsUpdateable="0" Type="java.lang.Object"/>
+  <Attribute Name="id" Type="java.lang.String"/>
+  <Attribute Name="childCount" IsUpdateable="0" Type="int"/>
+  <Attribute Name="facetNames" IsUpdateable="0"
+             Type="java.util.Iterator&lt;java.lang.String>"/>
+  <Attribute Name="facetsAndChildren" IsUpdateable="0"
+             Type="java.util.Iterator&lt;javax.faces.component.UIComponent>"/>
+  <Attribute Name="facetCount" IsUpdateable="0" Type="int"/>
+  <AccessorAttribute id="selectionType" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="selection" IsCollection="true" Type="java.util.Set"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="dataSelection" IsCollection="false"
+                     BeanClass="oracle.dss.graph.GraphConstants.DataSelection"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="selectionListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="selectionListeners" IsCollection="true"
+                     RemoveMethod="removeSelectionListener"
+                     AddMethod="addSelectionListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.graph.SelectionListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeSelectionListener"/>
+      <Property Name="AddMethod" Value="addSelectionListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="clientListeners" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.event.ClientListenerSet"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="seriesKey" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.model.KeyMap"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="groupKeys" IsCollection="true"
+                     BeanClass="oracle.adf.view.faces.bi.model.KeyMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="customToolTipCallback" IsCollection="false"
+                     BeanClass="oracle.dss.graph.CustomToolTipCallback"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataErrorTextCallback" IsCollection="false"
+                     BeanClass="oracle.dss.graph.DataErrorTextCallback"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="graphDataModel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.model.GraphDataModel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="defaultDataModel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.model.DataModel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="styleRuleBundle" IsCollection="true"
+                     Type="java.util.Vector"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="legendText" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.LegendText"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="selectPointLegendText" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.SelectPointLegendText"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="selectPointMarker" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.SelectPointMarker"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataFilter" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.DataFilter"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="plotArea" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.PlotArea"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pieFrame" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.PieFrame"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="funnelFrame" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.FunnelFrame"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="slice" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Slice"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="sliceLabel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.SliceLabel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pieLabel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.PieLabel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pieFeeler" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.PieFeeler"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="paretoLine" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.ParetoLine"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="paretoMarker" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.ParetoMarker"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="markerText" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.MarkerText"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="legendArea" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.LegendArea"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="legendTitle" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.LegendTitle"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="background" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Background"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="stockMarker" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.StockMarker"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="volumeMarker" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.VolumeMarker"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="alertSet" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.AlertSet"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="annotationSet" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.AnnotationSet"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="referenceObjectSet" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.ReferenceObjectSet"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="seriesSet" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.SeriesSet"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="thresholdSet" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.ThresholdSet"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="timeAxisDateFormat" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.TimeAxisDateFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="o1Axis" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.O1Axis"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="x1Axis" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.X1Axis"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y1Axis" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y1Axis"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y2Axis" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y2Axis"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="o1TickLabel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.O1TickLabel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="x1TickLabel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.X1TickLabel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y1TickLabel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y1TickLabel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y2TickLabel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y2TickLabel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="o1Title" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.O1Title"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="x1Title" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.X1Title"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y1Title" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y1Title"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y2Title" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y2Title"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y1BaseLine" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y1BaseLine"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y2BaseLine" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y2BaseLine"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="o1MajorTick" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.O1MajorTick"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="x1MajorTick" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.X1MajorTick"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y1MajorTick" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y1MajorTick"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y2MajorTick" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y2MajorTick"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="x1MinorTick" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.X1MinorTick"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y1MinorTick" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y1MinorTick"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y2MinorTick" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.Y2MinorTick"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="graphTitle" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.GraphTitle"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="graphSubtitle" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.GraphSubtitle"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="graphFootnote" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.GraphFootnote"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="timeSelector" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.TimeSelector"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="x1TickLabelCallback" IsCollection="false"
+                     BeanClass="oracle.dss.graph.TickLabelCallback"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y1TickLabelCallback" IsCollection="false"
+                     BeanClass="oracle.dss.graph.TickLabelCallback"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="y2TickLabelCallback" IsCollection="false"
+                     BeanClass="oracle.dss.graph.TickLabelCallback"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="timeAxisListeners" IsCollection="true"
+                     RemoveMethod="removeTimeAxisListener"
+                     AddMethod="addTimeAxisListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.TimeAxisListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeTimeAxisListener"/>
+      <Property Name="AddMethod" Value="addTimeAxisListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="timeAxisListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="timeSelectorListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="zoomAndScrollListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="zoomListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="scrollListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pointSelectionListeners" IsCollection="true"
+                     RemoveMethod="removePointSelectionListener"
+                     AddMethod="addPointSelectionListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.PointSelectionListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removePointSelectionListener"/>
+      <Property Name="AddMethod" Value="addPointSelectionListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="zoomListeners" IsCollection="true"
+                     RemoveMethod="removeZoomListener"
+                     AddMethod="addZoomListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.ZoomListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeZoomListener"/>
+      <Property Name="AddMethod" Value="addZoomListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="scrollListeners" IsCollection="true"
+                     RemoveMethod="removeScrollListener"
+                     AddMethod="addScrollListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.ScrollListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeScrollListener"/>
+      <Property Name="AddMethod" Value="addScrollListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="zoomAndScrollListeners" IsCollection="true"
+                     RemoveMethod="removeZoomAndScrollListener"
+                     AddMethod="addZoomAndScrollListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.ZoomAndScrollListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeZoomAndScrollListener"/>
+      <Property Name="AddMethod" Value="addZoomAndScrollListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="timeSelectorListeners" IsCollection="true"
+                     RemoveMethod="removeTimeSelectorListener"
+                     AddMethod="addTimeSelectorListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.TimeSelectorListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeTimeSelectorListener"/>
+      <Property Name="AddMethod" Value="addTimeSelectorListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="legendAreaRect" IsCollection="false"
+                     BeanClass="java.awt.Rectangle"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="plotAreaRect" IsCollection="false"
+                     BeanClass="java.awt.Rectangle"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="fontTextMap" IsCollection="true" Type="java.util.Map"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="clickListeners" IsCollection="true"
+                     RemoveMethod="removeClickListener"
+                     AddMethod="addClickListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.ClickListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeClickListener"/>
+      <Property Name="AddMethod" Value="addClickListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="clickListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="clickAction" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="actionExpression" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="shapeAttributesCallback" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.imageView.ShapeAttributesCallback"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="imageView" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.ImageView"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="svgScriptIdList" IsCollection="true"
+                     Type="java.util.List"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="svgOutputStream" IsCollection="false"
+                     BeanClass="java.io.OutputStream"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="svgWriter" IsCollection="false"
+                     BeanClass="java.io.Writer"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="tabularData" IsCollection="true" Type="java.util.List"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="shapeAttributesSet" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.imageView.ShapeAttributesSet"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="activeDataProperties" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.ActiveDataProperties"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="animationUpColor" IsCollection="false"
+                     BeanClass="java.awt.Color"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="animationDownColor" IsCollection="false"
+                     BeanClass="java.awt.Color"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="fontURLMap" IsCollection="true" Type="java.util.Map"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="attributeFormats" IsCollection="true"
+                     BeanClass="oracle.adf.view.faces.bi.component.util.AttributeFormat"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="dataCache" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.DataUpdateCache"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="popupHelperBounds" IsCollection="false"
+                     BeanClass="java.awt.Rectangle"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="partialTriggers" IsCollection="true"
+                     Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="drillRequestingListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="drillRequestedListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="drillAction" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="drillListeners" IsCollection="true"
+                     RemoveMethod="removeDrillListener"
+                     AddMethod="addDrillListener"
+                     BeanClass="oracle.adf.view.faces.bi.event.DrillListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeDrillListener"/>
+      <Property Name="AddMethod" Value="addDrillListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="action" IsCollection="false"
+                     BeanClass="javax.faces.el.MethodBinding"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="actionListener" IsCollection="false"
+                     BeanClass="javax.faces.el.MethodBinding"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="actionListeners" IsCollection="true"
+                     RemoveMethod="removeActionListener"
+                     AddMethod="addActionListener"
+                     BeanClass="javax.faces.event.ActionListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeActionListener"/>
+      <Property Name="AddMethod" Value="addActionListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="tokenSubstitution" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.TokenSubstitution"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataModel" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.model.DataModel"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="converter" IsCollection="false"
+                     BeanClass="javax.faces.convert.Converter"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="facesBean" IsCollection="false"
+                     BeanClass="org.apache.myfaces.trinidad.bean.FacesBean"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="attributeChangeListeners" IsCollection="true"
+                     RemoveMethod="removeAttributeChangeListener"
+                     AddMethod="addAttributeChangeListener"
+                     BeanClass="org.apache.myfaces.trinidad.event.AttributeChangeListener"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeAttributeChangeListener"/>
+      <Property Name="AddMethod" Value="addAttributeChangeListener"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="attributeChangeListener" IsCollection="false"
+                     BeanClass="javax.el.MethodExpression"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="attributes" IsCollection="true" Type="java.util.Map"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String, java.lang.Object"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="parent" IsCollection="false"
+                     BeanClass="javax.faces.component.UIComponent"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="children" IsCollection="true"
+                     BeanClass="javax.faces.component.UIComponent"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="facets" IsCollection="true" Type="java.util.Map"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element"
+               Type="java.lang.String, javax.faces.component.UIComponent"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="logicalParent" IsCollection="false"
+                     BeanClass="javax.faces.component.UIComponent"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="broadcast"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.event.FacesEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.adf.view.rich.dnd.DragSource"
+                  BeanClass="oracle.adf.view.rich.dnd.DragSource"
+                  id="createDragSource" ReturnNodeName="DragSource">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.util.Set" isStructured="true"/>
+    <ParameterInfo id="p2" Type="oracle.adf.view.rich.dnd.DnDAction"
+                   isStructured="true"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="javax.el.MethodExpression"
+                   isStructured="true"/>
+    <ParameterInfo id="p5" Type="java.util.Map" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.CharSequence"
+                  id="createDragSourceBehavior" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.adf.view.rich.dnd.DragSource"
+                   isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.util.Set" isStructured="true"/>
+    <ParameterInfo id="p3" Type="oracle.adf.view.rich.dnd.DnDAction"
+                   isStructured="true"/>
+    <ParameterInfo id="p4" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p5" Type="javax.el.MethodExpression"
+                   isStructured="true"/>
+    <ParameterInfo id="p6" Type="java.util.Map" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addSelectionListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.graph.SelectionListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeSelectionListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.graph.SelectionListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="renderShowPopupScript"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="invokeOnComponent"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="javax.faces.component.ContextCallback"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDataKey"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.model.KeyMap"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.util.List" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDataIndex"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="getDataValue"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.graph.DataType"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="convertCompIdToFacetName" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="convertComponentIdToFacetName" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setGraphType"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setCustomLayout"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setMarkerTooltipType"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setGroupTooltipLabelType"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setSeriesTooltipLabelType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setMarkerDisplayed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isMarkerDisplayed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setLineDataLineDisplayed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLineDataLineDisplayed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setAlignTickMarks"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isAlignTickMarks"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setGraphicAntialiasing"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isGraphicAntialiasing"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setTextAntialiasing"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isTextAntialiasing"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setSeriesEffect"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setSeriesRolloverBehavior" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setZoomDirection"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setAnnotationsVisibility"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setTimeRangeMode"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setTimeAxisType"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setTimeAxisInterval"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setFunnelPercentMeasure"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isFunnelPercentMeasure" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setStandardShapeAndWidth"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isStandardShapeAndWidth" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setLastStageOnly"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isLastStageOnly"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="handleDataScroll"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleDataZoomIn"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleDataZoomOut"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleDataZoomInIncr"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleDataZoomInIncr"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleLineSelectPoint"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleDataZoomOutIncr"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleDataZoomOutIncr"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="handleTimeSelectorEvent"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="long" isStructured="false"/>
+    <ParameterInfo id="p1" Type="long" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setXMLAsString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getXML"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="transferProperties"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="specifyPersistableAttributes" ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.dss.util.persistence.PersistableAttributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="initialize"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.util.Hashtable" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setThreeDEffect"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isThreeDEffect"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="restoreState"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="restoreZoomAndScrollPosition" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.graph.pfj.ZoomState"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="encodeBegin"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="encodeEnd"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isTransferProperties"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isTimeSelectorEvent"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setTimeSelectorEvent"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addTimeAxisListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.TimeAxisListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeTimeAxisListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.TimeAxisListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="addPointSelectionListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.PointSelectionListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="removePointSelectionListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.PointSelectionListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addZoomListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.ZoomListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeZoomListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.ZoomListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addScrollListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.ScrollListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeScrollListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.ScrollListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addZoomAndScrollListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.ZoomAndScrollListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="removeZoomAndScrollListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.ZoomAndScrollListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addTimeSelectorListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.TimeSelectorListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="removeTimeSelectorListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.TimeSelectorListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="doAutoLayout"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setFontTextMapped"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isFontTextMapped"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="addClickListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.ClickListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeClickListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.ClickListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setRenderImagemap"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isRenderImagemap"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setDrillingEnabled"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDrillingEnabled"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setImageFormat"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setSvgFontEmbedding"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setSvgEncodingScriptTag"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isSvgEncodingScriptTag" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setContentDelivery"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setAnimationOnDataChange"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setAnimationIndicators"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setAnimationOnDisplay"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setVisualEffects"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setFlashDefaultFontLoading" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getFlashRenderingEngineSwfPath" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getFlashVarsString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isUpdated"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setUpdated"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isPartialSubmit"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setPartialSubmit"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="queueEvent"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.event.FacesEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addDrillListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.DrillListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeDrillListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.adf.view.faces.bi.event.DrillListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addActionListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.event.ActionListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeActionListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.event.ActionListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isImmediate"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setImmediate"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isEnabled"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setEnabled"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="getFacet"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Class" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setWaitDataForRow"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.WaitData" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.util.WaitData"
+                  BeanClass="oracle.dss.util.WaitData" id="getWaitDataForRow"
+                  ReturnNodeName="WaitData">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="clearWaitDataForAllRows"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getMemberLabel" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAccess"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getMemberLabel" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAccess"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="_getLayerLabel" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAccess"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="_getMemberLabel" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAccess"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="_getMemberLabel" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAccess"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getLayerLabel" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAccess"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMemberMetadataLabelTypeSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetadataLabelTypeSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setMemberMetadataLabelType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getMemberMetadataLabelType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setLayerMetadataLabelType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getLayerMetadataLabelType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getContainerClientId" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="javax.faces.component.UIComponent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="addAttributeChangeListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="org.apache.myfaces.trinidad.event.AttributeChangeListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="removeAttributeChangeListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="org.apache.myfaces.trinidad.event.AttributeChangeListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setAttributeChangeListener" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.el.MethodBinding"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.el.ValueExpression"
+                  BeanClass="javax.el.ValueExpression" id="getValueExpression"
+                  ReturnNodeName="ValueExpression">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setValueExpression"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="javax.el.ValueExpression" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.faces.el.ValueBinding"
+                  BeanClass="javax.faces.el.ValueBinding" id="getValueBinding"
+                  ReturnNodeName="ValueBinding">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setValueBinding"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="javax.faces.el.ValueBinding"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getClientId"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isRendered"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setRendered"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isTransient"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setTransient"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.faces.component.UIComponent"
+                  BeanClass="javax.faces.component.UIComponent"
+                  id="findComponent" ReturnNodeName="UIComponent">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.faces.component.UIComponent"
+                  BeanClass="javax.faces.component.UIComponent" id="getFacet"
+                  ReturnNodeName="UIComponent">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="decode"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="encodeBegin"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="encodeChildren"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="encodeEnd"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="processDecodes"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="processValidators"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="processUpdates"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object"
+                  id="processSaveState" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="processRestoreState"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="markInitialState"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="saveState"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="restoreState"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="javax.el.MethodExpression"
+                  BeanClass="javax.el.MethodExpression" id="adaptMethodBinding"
+                  ReturnNodeName="MethodExpression">
+    <ParameterInfo id="p0" Type="javax.faces.el.MethodBinding"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="processFlattenedChildren" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessor&lt;S>"
+                   isStructured="false"/>
+    <ParameterInfo id="p2" Type="javax.faces.component.UIComponent"
+                   isStructured="true"/>
+    <ParameterInfo id="p3" Type="S" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="processFlattenedChildren" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessingContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p2"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessor&lt;S>"
+                   isStructured="false"/>
+    <ParameterInfo id="p3" Type="javax.faces.component.UIComponent"
+                   isStructured="true"/>
+    <ParameterInfo id="p4" Type="S" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="processFlattenedChildren" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessor&lt;S>"
+                   isStructured="false"/>
+    <ParameterInfo id="p2"
+                   Type="java.lang.Iterable&lt;javax.faces.component.UIComponent>"
+                   isStructured="false"/>
+    <ParameterInfo id="p3" Type="S" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="processFlattenedChildren" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessingContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p2"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessor&lt;S>"
+                   isStructured="false"/>
+    <ParameterInfo id="p3"
+                   Type="java.lang.Iterable&lt;javax.faces.component.UIComponent>"
+                   isStructured="false"/>
+    <ParameterInfo id="p4" Type="S" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="encodeFlattenedChild"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessor&lt;S>"
+                   isStructured="false"/>
+    <ParameterInfo id="p2" Type="javax.faces.component.UIComponent"
+                   isStructured="true"/>
+    <ParameterInfo id="p3" Type="S" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="encodeFlattenedChildren" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.component.ComponentProcessor&lt;S>"
+                   isStructured="false"/>
+    <ParameterInfo id="p2"
+                   Type="java.lang.Iterable&lt;javax.faces.component.UIComponent>"
+                   isStructured="false"/>
+    <ParameterInfo id="p3" Type="S" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="visitTree"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="org.apache.myfaces.trinidad.component.visit.VisitContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.component.visit.VisitCallback"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="visitTree"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="org.apache.myfaces.trinidad.component.visit.VisitContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="javax.faces.component.UIComponent"
+                   isStructured="true"/>
+    <ParameterInfo id="p2"
+                   Type="org.apache.myfaces.trinidad.component.visit.VisitCallback"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addPartialTarget"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.context.PartialPageContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p2" Type="javax.faces.component.UIComponent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="org.apache.myfaces.trinidad.component.visit.VisitResult"
+                  BeanClass="org.apache.myfaces.trinidad.component.visit.VisitResult"
+                  id="partialEncodeVisit" ReturnNodeName="VisitResult">
+    <ParameterInfo id="p0"
+                   Type="org.apache.myfaces.trinidad.component.visit.VisitContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="org.apache.myfaces.trinidad.context.PartialPageContext"
+                   isStructured="true"/>
+    <ParameterInfo id="p2"
+                   Type="org.apache.myfaces.trinidad.component.visit.VisitCallback"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.faces.component.UIComponent"
+                  BeanClass="javax.faces.component.UIComponent"
+                  id="getLogicalParent" ReturnNodeName="UIComponent">
+    <ParameterInfo id="p0" Type="javax.faces.component.UIComponent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getContainerClientId" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="encodeAll"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.faces.context.FacesContext"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.adf.view.faces.bi.component.graph.UIGraph"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.UIGraph"
+                     id="UIGraph"/>
+</JavaBean>

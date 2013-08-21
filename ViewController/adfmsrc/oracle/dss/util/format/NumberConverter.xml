@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="NumberConverter" Package="oracle.dss.util.format"
+          BeanClass="oracle.dss.util.format.NumberConverter" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getAsString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DataListener" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.DataListener" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="viewPivotRequesting"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.PivotEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="viewPivotRequested"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.PivotEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="viewDrillRequesting"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.DrillEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="viewDrillRequested"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.DrillEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="viewPageRequesting"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.PageEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="viewPageRequested"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.PageEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

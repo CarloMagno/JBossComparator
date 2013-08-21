@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="StatusInfo" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.StatusInfo" isJavaBased="true">
+  <Attribute Name="status" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="exception" IsUpdateable="0" Type="java.lang.Exception"/>
+  <Attribute Name="returnValue" Type="java.lang.Object"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.StatusInfo"
+                     BeanClass="oracle.dss.util.StatusInfo" id="StatusInfo">
+    <ParameterInfo id="p0" Type="java.lang.Exception" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.StatusInfo"
+                     BeanClass="oracle.dss.util.StatusInfo" id="StatusInfo">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.StatusInfo"
+                     BeanClass="oracle.dss.util.StatusInfo" id="StatusInfo">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

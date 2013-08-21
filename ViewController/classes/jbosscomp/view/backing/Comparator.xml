@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Comparator" Package="jbosscomp.view.backing"
+          BeanClass="jbosscomp.view.backing.Comparator" isJavaBased="true">
+  <AccessorAttribute id="tabularData" IsCollection="true" Type="java.util.List"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="f1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.RichForm"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="d1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.RichDocument"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pt2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichPanelTabbed"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="sdi1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichShowDetailItem"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="sdi2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichShowDetailItem"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pb1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichPanelBox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="exProcY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="newProcY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="s1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.output.RichSeparator"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="s2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.output.RichSeparator"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pgl1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichPanelGroupLayout"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pb2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichPanelBox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pb3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichPanelBox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="s3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.output.RichSeparator"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="s10" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.output.RichSeparator"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="s11" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.output.RichSeparator"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="s12" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.output.RichSeparator"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="coresProcY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="coreFactorY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalProcY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="licenseCostY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="licenseDiscY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalLicenseY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="suppCostY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalSuppY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalCostY1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="exProcY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="newProcY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="coresProcY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="coreFactorY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalProcY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="licenseCostY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="licenseDiscY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalLicenseY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="suppCostY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalSuppY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalCostY2" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="exProcY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="newProcY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="coresProcY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="coreFactorY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalProcY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="licenseCostY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="licenseDiscY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalLicenseY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="suppCostY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalSuppY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="totalCostY3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.input.RichInputNumberSpinbox"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="sdi3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichShowDetailItem"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pgl3" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichPanelGroupLayout"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pt1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.fragment.RichPageTemplate"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="barGraph1" IsCollection="false"
+                     BeanClass="oracle.adf.view.faces.bi.component.graph.UIGraph"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="pbl1" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.component.rich.layout.RichPanelBorderLayout"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="jbosscomp.view.backing.Comparator"
+                     BeanClass="jbosscomp.view.backing.Comparator"
+                     id="Comparator"/>
+</JavaBean>

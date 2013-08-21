@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="WaitData" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.WaitData" isJavaBased="true">
+  <Attribute Name="cellMessage" IsUpdateable="0" Type="java.lang.String"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.WaitData"
+                     BeanClass="oracle.dss.util.WaitData" id="WaitData">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

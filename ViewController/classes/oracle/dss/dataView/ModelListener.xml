@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ModelListener" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.ModelListener" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="modelDataChanged"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataChangedEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="modelDataAvailable"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAvailableEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="modelWaitDataAvailable"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.WaitDataAvailableEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ComponentHandle" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.ComponentHandle" isJavaBased="true">
+  <Attribute Name="ID" IsUpdateable="0" Type="int"/>
+  <Attribute Name="name" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="component" IsUpdateable="0" Type="java.lang.Object"/>
+  <AccessorAttribute id="componentInfo" IsCollection="false"
+                     BeanClass="oracle.dss.util.ComponentInfo"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDataAccess"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataAccess"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.dataView.ComponentHandle"
+                     BeanClass="oracle.dss.dataView.ComponentHandle"
+                     id="ComponentHandle">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.Object" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="NumberFormat" Package="java.text"
+          BeanClass="java.text.NumberFormat" isJavaBased="true">
+  <Attribute Name="maximumIntegerDigits" Type="int"/>
+  <Attribute Name="minimumIntegerDigits" Type="int"/>
+  <Attribute Name="maximumFractionDigits" Type="int"/>
+  <Attribute Name="minimumFractionDigits" Type="int"/>
+  <Attribute Name="currency" Type="java.util.Currency"/>
+  <Attribute Name="roundingMode" Type="java.math.RoundingMode"/>
+  <AccessorAttribute id="instance" IsCollection="false"
+                     BeanClass="java.text.NumberFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="numberInstance" IsCollection="false"
+                     BeanClass="java.text.NumberFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="integerInstance" IsCollection="false"
+                     BeanClass="java.text.NumberFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="currencyInstance" IsCollection="false"
+                     BeanClass="java.text.NumberFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="percentInstance" IsCollection="false"
+                     BeanClass="java.text.NumberFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="availableLocales" IsCollection="true"
+                     Type="java.util.Locale[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.util.Locale"/>
+  </AccessorAttribute>
+  <MethodAccessor IsCollection="false" Type="java.lang.StringBuffer" id="format"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="toAppendTo" Type="java.lang.StringBuffer"
+                   isStructured="false"/>
+    <ParameterInfo id="pos" Type="java.text.FieldPosition" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="parseObject"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="source" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="pos" Type="java.text.ParsePosition" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="format"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="number" Type="double" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="format"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="number" Type="long" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.StringBuffer" id="format"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="number" Type="double" isStructured="false"/>
+    <ParameterInfo id="toAppendTo" Type="java.lang.StringBuffer"
+                   isStructured="false"/>
+    <ParameterInfo id="pos" Type="java.text.FieldPosition" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.StringBuffer" id="format"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="number" Type="long" isStructured="false"/>
+    <ParameterInfo id="toAppendTo" Type="java.lang.StringBuffer"
+                   isStructured="false"/>
+    <ParameterInfo id="pos" Type="java.text.FieldPosition" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Number" id="parse"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="source" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="parsePosition" Type="java.text.ParsePosition"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Number" id="parse"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="source" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isParseIntegerOnly"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setParseIntegerOnly"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="value" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.text.NumberFormat"
+                  BeanClass="java.text.NumberFormat" id="getInstance"
+                  ReturnNodeName="NumberFormat">
+    <ParameterInfo id="inLocale" Type="java.util.Locale" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.text.NumberFormat"
+                  BeanClass="java.text.NumberFormat" id="getNumberInstance"
+                  ReturnNodeName="NumberFormat">
+    <ParameterInfo id="inLocale" Type="java.util.Locale" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.text.NumberFormat"
+                  BeanClass="java.text.NumberFormat" id="getIntegerInstance"
+                  ReturnNodeName="NumberFormat">
+    <ParameterInfo id="inLocale" Type="java.util.Locale" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.text.NumberFormat"
+                  BeanClass="java.text.NumberFormat" id="getCurrencyInstance"
+                  ReturnNodeName="NumberFormat">
+    <ParameterInfo id="inLocale" Type="java.util.Locale" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.text.NumberFormat"
+                  BeanClass="java.text.NumberFormat" id="getPercentInstance"
+                  ReturnNodeName="NumberFormat">
+    <ParameterInfo id="inLocale" Type="java.util.Locale" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="hashCode"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isGroupingUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setGroupingUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="newValue" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="format"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="java.text.AttributedCharacterIterator"
+                  BeanClass="java.text.AttributedCharacterIterator"
+                  id="formatToCharacterIterator"
+                  ReturnNodeName="AttributedCharacterIterator">
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="parseObject"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="source" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

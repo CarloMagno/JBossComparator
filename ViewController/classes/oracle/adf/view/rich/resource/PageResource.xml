@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="PageResource" Package="oracle.adf.view.rich.resource"
+          BeanClass="oracle.adf.view.rich.resource.PageResource"
+          isJavaBased="true">
+  <Attribute Name="URI" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="value" IsUpdateable="0" Type="java.lang.String"/>
+  <AccessorAttribute id="location" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.resource.PageResource.ResourceLocation"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="type" IsCollection="false"
+                     BeanClass="oracle.adf.view.rich.resource.PageResource.ResourceType"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="hashCode"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.adf.view.rich.resource.PageResource"
+                     BeanClass="oracle.adf.view.rich.resource.PageResource"
+                     id="PageResource">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.rich.resource.PageResource.ResourceType"
+                   isStructured="true"/>
+    <ParameterInfo id="p1"
+                   Type="oracle.adf.view.rich.resource.PageResource.ResourceLocation"
+                   isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.adf.view.rich.resource.PageResource"
+                     BeanClass="oracle.adf.view.rich.resource.PageResource"
+                     id="PageResource">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.rich.resource.PageResource.ResourceType"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

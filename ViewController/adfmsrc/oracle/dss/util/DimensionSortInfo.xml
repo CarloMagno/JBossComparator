@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DimensionSortInfo" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.DimensionSortInfo" isJavaBased="true">
+  <Attribute Name="dimension" Type="java.lang.String"/>
+  <AccessorAttribute id="hierarchy" IsCollection="true"
+                     Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="type" IsCollection="true" Type="int[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="int"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="direction" IsCollection="true" Type="int[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="int"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="object" IsCollection="true" Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="QDR" IsCollection="true"
+                     BeanClass="oracle.dss.util.HierarchicalQDR"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="label" IsCollection="true" Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <MethodAccessor IsCollection="false" Type="void" id="setWithinLevel"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean[]" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true" Type="boolean[]" id="isWithinLevel"
+                  ReturnNodeName="boolean"
+                  CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="boolean"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.DimensionSortInfo"
+                     BeanClass="oracle.dss.util.DimensionSortInfo"
+                     id="DimensionSortInfo">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p5" Type="oracle.dss.util.HierarchicalQDR[]"
+                   isStructured="false"/>
+    <ParameterInfo id="p6" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p7" Type="boolean[]" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.DimensionSortInfo"
+                     BeanClass="oracle.dss.util.DimensionSortInfo"
+                     id="DimensionSortInfo">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p5" Type="oracle.dss.util.HierarchicalQDR[]"
+                   isStructured="false"/>
+    <ParameterInfo id="p6" Type="java.lang.String[]" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.DimensionSortInfo"
+                     BeanClass="oracle.dss.util.DimensionSortInfo"
+                     id="DimensionSortInfo">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

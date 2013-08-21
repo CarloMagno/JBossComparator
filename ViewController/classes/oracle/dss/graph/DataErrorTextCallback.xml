@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DataErrorTextCallback" Package="oracle.dss.graph"
+          BeanClass="oracle.dss.graph.DataErrorTextCallback" isJavaBased="true">
+  <MethodAccessor IsCollection="true" Type="java.lang.String[]"
+                  id="getDataErrorText" ReturnNodeName="String"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="p0" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.graph.NotEnoughData"
+                   isStructured="true"/>
+    <Attribute Name="element" Type="java.lang.String"/>
+  </MethodAccessor>
+</JavaBean>

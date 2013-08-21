@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DirContext" Package="javax.naming.directory"
+          BeanClass="javax.naming.directory.DirContext" isJavaBased="true">
+  <Attribute Name="environment" IsUpdateable="0"
+             Type="java.util.Hashtable&lt;?, ?>"/>
+  <Attribute Name="nameInNamespace" IsUpdateable="0" Type="java.lang.String"/>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attributes"
+                  BeanClass="javax.naming.directory.Attributes"
+                  id="getAttributes" ReturnNodeName="Attributes">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attributes"
+                  BeanClass="javax.naming.directory.Attributes"
+                  id="getAttributes" ReturnNodeName="Attributes">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attributes"
+                  BeanClass="javax.naming.directory.Attributes"
+                  id="getAttributes" ReturnNodeName="Attributes">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="attrIds" Type="java.lang.String[]" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.Attributes"
+                  BeanClass="javax.naming.directory.Attributes"
+                  id="getAttributes" ReturnNodeName="Attributes">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="attrIds" Type="java.lang.String[]" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="modifyAttributes"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="mod_op" Type="int" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="modifyAttributes"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="mod_op" Type="int" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="modifyAttributes"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="mods" Type="javax.naming.directory.ModificationItem[]"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="modifyAttributes"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="mods" Type="javax.naming.directory.ModificationItem[]"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="bind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="bind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="rebind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="rebind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.DirContext"
+                  BeanClass="javax.naming.directory.DirContext"
+                  id="createSubcontext" ReturnNodeName="DirContext">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.DirContext"
+                  BeanClass="javax.naming.directory.DirContext"
+                  id="createSubcontext" ReturnNodeName="DirContext">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="attrs" Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.DirContext"
+                  BeanClass="javax.naming.directory.DirContext" id="getSchema"
+                  ReturnNodeName="DirContext">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.DirContext"
+                  BeanClass="javax.naming.directory.DirContext" id="getSchema"
+                  ReturnNodeName="DirContext">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.DirContext"
+                  BeanClass="javax.naming.directory.DirContext"
+                  id="getSchemaClassDefinition" ReturnNodeName="DirContext">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.directory.DirContext"
+                  BeanClass="javax.naming.directory.DirContext"
+                  id="getSchemaClassDefinition" ReturnNodeName="DirContext">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="matchingAttributes"
+                   Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+    <ParameterInfo id="attributesToReturn" Type="java.lang.String[]"
+                   isStructured="false"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="matchingAttributes"
+                   Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+    <ParameterInfo id="attributesToReturn" Type="java.lang.String[]"
+                   isStructured="false"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="matchingAttributes"
+                   Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="matchingAttributes"
+                   Type="javax.naming.directory.Attributes"
+                   isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="filter" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="cons" Type="javax.naming.directory.SearchControls"
+                   isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="filter" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="cons" Type="javax.naming.directory.SearchControls"
+                   isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="filterExpr" Type="java.lang.String"
+                   isStructured="false"/>
+    <ParameterInfo id="filterArgs" Type="java.lang.Object[]"
+                   isStructured="false"/>
+    <ParameterInfo id="cons" Type="javax.naming.directory.SearchControls"
+                   isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"
+                  id="search"
+                  ReturnNodeName="NamingEnumeration&lt;SearchResult>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="filterExpr" Type="java.lang.String"
+                   isStructured="false"/>
+    <ParameterInfo id="filterArgs" Type="java.lang.Object[]"
+                   isStructured="false"/>
+    <ParameterInfo id="cons" Type="javax.naming.directory.SearchControls"
+                   isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="lookup"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="lookup"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="bind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="bind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="rebind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="rebind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="obj" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="unbind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="unbind"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="rename"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="oldName" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="newName" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="rename"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="oldName" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="newName" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.NameClassPair>"
+                  id="list" ReturnNodeName="NamingEnumeration&lt;NameClassPair>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.NameClassPair>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.NameClassPair>"
+                  id="list" ReturnNodeName="NamingEnumeration&lt;NameClassPair>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.NameClassPair>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.Binding>"
+                  id="listBindings"
+                  ReturnNodeName="NamingEnumeration&lt;Binding>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.Binding>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="true"
+                  Type="javax.naming.NamingEnumeration&lt;javax.naming.Binding>"
+                  id="listBindings"
+                  ReturnNodeName="NamingEnumeration&lt;Binding>"
+                  CollectionBeanClass="ReadOnlySingleValue">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <Attribute Name="element"
+               Type="javax.naming.NamingEnumeration&lt;javax.naming.Binding>"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="destroySubcontext"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="destroySubcontext"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Context"
+                  BeanClass="javax.naming.Context" id="createSubcontext"
+                  ReturnNodeName="Context">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Context"
+                  BeanClass="javax.naming.Context" id="createSubcontext"
+                  ReturnNodeName="Context">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="lookupLink"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="lookupLink"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.NameParser"
+                  BeanClass="javax.naming.NameParser" id="getNameParser"
+                  ReturnNodeName="NameParser">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.NameParser"
+                  BeanClass="javax.naming.NameParser" id="getNameParser"
+                  ReturnNodeName="NameParser">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="composeName"
+                  ReturnNodeName="Name">
+    <ParameterInfo id="name" Type="javax.naming.Name" isStructured="true"/>
+    <ParameterInfo id="prefix" Type="javax.naming.Name" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="composeName"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="prefix" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object"
+                  id="addToEnvironment" ReturnNodeName="Return">
+    <ParameterInfo id="propName" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="propVal" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object"
+                  id="removeFromEnvironment" ReturnNodeName="Return">
+    <ParameterInfo id="propName" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="close"
+                  ReturnNodeName="Return"/>
+</JavaBean>

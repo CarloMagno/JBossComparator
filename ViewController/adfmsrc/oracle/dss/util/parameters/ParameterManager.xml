@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ParameterManager" Package="oracle.dss.util.parameters"
+          BeanClass="oracle.dss.util.parameters.ParameterManager"
+          isJavaBased="true">
+  <AccessorAttribute id="parameters" IsCollection="true"
+                     RemoveMethod="removeParameter"
+                     BeanClass="oracle.dss.util.parameters.Parameter"
+                     CollectionBeanClass="UpdateableCollection">
+    <Properties>
+      <Property Name="RemoveMethod" Value="removeParameter"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="parameterValueManager" IsCollection="false"
+                     BeanClass="oracle.dss.util.parameters.ParameterValueManager"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setParameter"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.parameters.Parameter"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.dss.util.parameters.Parameter"
+                  BeanClass="oracle.dss.util.parameters.Parameter"
+                  id="getParameter" ReturnNodeName="Parameter">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeParameter"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.parameters.Parameter"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="usesParameter"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.parameters.Parameter"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

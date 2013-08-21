@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DragSourceDropEvent" Package="java.awt.dnd"
+          BeanClass="java.awt.dnd.DragSourceDropEvent" isJavaBased="true">
+  <Attribute Name="dropSuccess" IsUpdateable="0" Type="boolean"/>
+  <Attribute Name="dropAction" IsUpdateable="0" Type="int"/>
+  <Attribute Name="x" IsUpdateable="0" Type="int"/>
+  <Attribute Name="y" IsUpdateable="0" Type="int"/>
+  <Attribute Name="source" IsUpdateable="0" Type="java.lang.Object"/>
+  <AccessorAttribute id="dragSourceContext" IsCollection="false"
+                     BeanClass="java.awt.dnd.DragSourceContext"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="location" IsCollection="false"
+                     BeanClass="java.awt.Point"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="java.awt.dnd.DragSourceDropEvent"
+                     BeanClass="java.awt.dnd.DragSourceDropEvent"
+                     id="DragSourceDropEvent">
+    <ParameterInfo id="dsc" Type="java.awt.dnd.DragSourceContext"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="java.awt.dnd.DragSourceDropEvent"
+                     BeanClass="java.awt.dnd.DragSourceDropEvent"
+                     id="DragSourceDropEvent">
+    <ParameterInfo id="dsc" Type="java.awt.dnd.DragSourceContext"
+                   isStructured="true"/>
+    <ParameterInfo id="action" Type="int" isStructured="false"/>
+    <ParameterInfo id="success" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="x" Type="int" isStructured="false"/>
+    <ParameterInfo id="y" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="java.awt.dnd.DragSourceDropEvent"
+                     BeanClass="java.awt.dnd.DragSourceDropEvent"
+                     id="DragSourceDropEvent">
+    <ParameterInfo id="dsc" Type="java.awt.dnd.DragSourceContext"
+                   isStructured="true"/>
+    <ParameterInfo id="action" Type="int" isStructured="false"/>
+    <ParameterInfo id="success" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="BaseViewFormat" Package="oracle.dss.util.format"
+          BeanClass="oracle.dss.util.format.BaseViewFormat" isJavaBased="true">
+  <Attribute Name="currencySymbol" Type="java.lang.String"/>
+  <Attribute Name="decimalDigit" Type="int"/>
+  <Attribute Name="javaDateFormat" Type="java.lang.String"/>
+  <Attribute Name="oracleDateFormat" Type="java.lang.String"/>
+  <Attribute Name="decimalSeparator" Type="char"/>
+  <Attribute Name="decimalSeparatorSymbol" IsUpdateable="0" Type="char"/>
+  <Attribute Name="negCurFmt" Type="int"/>
+  <Attribute Name="negCurFmtValue" IsUpdateable="0" Type="int"/>
+  <Attribute Name="negNumFmt" Type="int"/>
+  <Attribute Name="negNumFmtValue" IsUpdateable="0" Type="int"/>
+  <Attribute Name="numberType" Type="int"/>
+  <Attribute Name="posCurFmt" Type="int"/>
+  <Attribute Name="posCurFmtValue" IsUpdateable="0" Type="int"/>
+  <Attribute Name="posNumFmt" Type="int"/>
+  <Attribute Name="posNumFmtValue" IsUpdateable="0" Type="int"/>
+  <Attribute Name="scaleDownBillions" Type="java.lang.String"/>
+  <Attribute Name="scaleDownBillionsSymbol" IsUpdateable="0"
+             Type="java.lang.String"/>
+  <Attribute Name="scaleDownMillions" Type="java.lang.String"/>
+  <Attribute Name="scaleDownMillionsSymbol" IsUpdateable="0"
+             Type="java.lang.String"/>
+  <Attribute Name="scaleDownQuadrillions" Type="java.lang.String"/>
+  <Attribute Name="scaleDownQuadrillionsSymbol" IsUpdateable="0"
+             Type="java.lang.String"/>
+  <Attribute Name="scaleDownThousands" Type="java.lang.String"/>
+  <Attribute Name="scaleDownThousandsSymbol" IsUpdateable="0"
+             Type="java.lang.String"/>
+  <Attribute Name="scaleDownTrillions" Type="java.lang.String"/>
+  <Attribute Name="scaleDownTrillionsSymbol" IsUpdateable="0"
+             Type="java.lang.String"/>
+  <Attribute Name="scaleFactor" Type="int"/>
+  <Attribute Name="thousandSeparator" Type="char"/>
+  <Attribute Name="thousandSeparatorUsed" Type="boolean"/>
+  <Attribute Name="thousandSeparatorSymbol" IsUpdateable="0" Type="char"/>
+  <Attribute Name="locale" Type="java.util.Locale"/>
+  <Attribute Name="timeZone" Type="java.util.TimeZone"/>
+  <Attribute Name="numberFormatString" Type="java.lang.String"/>
+  <Attribute Name="numberFormatType" IsUpdateable="0" Type="int"/>
+  <Attribute Name="scaleFactorExponent" Type="int"/>
+  <Attribute Name="negPctFmt" Type="int"/>
+  <AccessorAttribute id="numberConverter" IsCollection="false"
+                     BeanClass="oracle.dss.util.format.NumberConverter"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="numberFormat" IsCollection="false"
+                     BeanClass="java.text.NumberFormat"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="init"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="init"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="char" isStructured="false"/>
+    <ParameterInfo id="p2" Type="char" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+    <ParameterInfo id="p6" Type="int" isStructured="false"/>
+    <ParameterInfo id="p7" Type="int" isStructured="false"/>
+    <ParameterInfo id="p8" Type="int" isStructured="false"/>
+    <ParameterInfo id="p9" Type="int" isStructured="false"/>
+    <ParameterInfo id="p10" Type="int" isStructured="false"/>
+    <ParameterInfo id="p11" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p12" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p13" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p14" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p15" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p16" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.util.xml.ObjectNode"
+                  BeanClass="oracle.dss.util.xml.ObjectNode" id="getXML"
+                  ReturnNodeName="ObjectNode">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.util.xml.ObjectNode"
+                  BeanClass="oracle.dss.util.xml.ObjectNode" id="getXML"
+                  ReturnNodeName="ObjectNode">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setXML"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.xml.ObjectNode"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.util.HashMap" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="setXML"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.xml.ObjectNode"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="convertNumberTypeToInt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="convertPosNumFmtToInt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="convertPosCurFmtToInt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="convertNegCurFmtToInt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="convertNegNumFmtToInt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="convertScaleFactorToInt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isAnythingOverridden"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="merge"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.rules.Mergeable"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="initWithString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="validateFormatString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="clearUsedBits"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="BooleanToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="DateToString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.sql.Date" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="UtilDateToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.util.Date" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="DoubleToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="FloatToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="float" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="TimeToString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.sql.Time" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="TimestampToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.sql.Timestamp" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isLeadingZero"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="int"
+                  id="convertScalingToScaleFactor" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int"
+                  id="convertNonAutoScalingToScaleFactor"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="convertScaleFactorToScaling" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="IntToString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCurrencySymbolUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDecimalDigitUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isOracleDateFormatUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isJavaDateFormatUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDecimalSeparatorUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isLeadingZeroUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isNegCurFmtUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isNegNumFmtUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isNumberTypeUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isPosCurFmtUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isPosNumFmtUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isScaleDownBillionsUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isScaleDownMillionsUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isScaleDownQuadrillionsUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isScaleDownThousandsUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isScaleDownTrillionsUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isScaleFactorUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isThousandSeparatorUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="LongToString"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="long" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="ObjectToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setCurrencySymbolUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDecimalDigitUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setJavaDateFormatUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setOracleDateFormatUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDecimalSeparatorUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setLeadingZero"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setLeadingZeroUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setNegCurFmtUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setNegNumFmtUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setNumberTypeUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setPosCurFmtUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setPosNumFmtUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setScaleDownBillionsUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setScaleDownMillionsUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setScaleDownQuadrillionsUsed" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setScaleDownThousandsUsed" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setScaleDownTrillionsUsed" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setScaleFactorUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="ShortToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="short" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Boolean"
+                  id="StringToBoolean" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.sql.Date" id="StringToDate"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.sql.Date" id="StringToDate"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.util.Date"
+                  id="StringToUtilDate" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="double" id="StringToDouble"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="float" id="StringToFloat"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="StringToInt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="long" id="StringToLong"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object"
+                  id="StringToObject" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="short" id="StringToShort"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="StringToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.sql.Time" id="StringToTime"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.sql.Timestamp"
+                  id="StringToTimestamp" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setViewFormatCallback"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.format.BaseViewFormatCallback"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="updateDefaultSymbols"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="updateDefaultCurrencySymbol" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setErrorHandler"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.ErrorHandler"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="booleanToLocString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Boolean"
+                  id="locStringToBoolean" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getNumberFormatString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="setNumberFormatType"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isScaleFactorExponentUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setNegativeAngleBracketsUsed" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isNegativeAngleBracketsUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setPercentUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isPercentUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setDefaultThousandSeparator" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="char" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setDefaultDecimalSeparator" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="char" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDefaultCurrencySymbol"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setISOCurrency"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isISOCurrency"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setISOCurrencyUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isISOCurrencyUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setNegPctFmtUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isNegPctFmtUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setNumberFormatStringUsed" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isNumberFormatStringUsed" ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.format.BaseViewFormat"
+                     BeanClass="oracle.dss.util.format.BaseViewFormat"
+                     id="BaseViewFormat">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.format.BaseViewFormat"
+                     BeanClass="oracle.dss.util.format.BaseViewFormat"
+                     id="BaseViewFormat">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="char" isStructured="false"/>
+    <ParameterInfo id="p2" Type="char" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+    <ParameterInfo id="p6" Type="int" isStructured="false"/>
+    <ParameterInfo id="p7" Type="int" isStructured="false"/>
+    <ParameterInfo id="p8" Type="int" isStructured="false"/>
+    <ParameterInfo id="p9" Type="int" isStructured="false"/>
+    <ParameterInfo id="p10" Type="int" isStructured="false"/>
+    <ParameterInfo id="p11" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p12" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p13" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p14" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p15" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p16" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.format.BaseViewFormat"
+                     BeanClass="oracle.dss.util.format.BaseViewFormat"
+                     id="BaseViewFormat"/>
+</JavaBean>

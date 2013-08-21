@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Model" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.Model" isJavaBased="true">
+  <AccessorAttribute id="dataSource" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataSource"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataDirector" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataDirector"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataAccess" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataAccess"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="errorHandler" IsCollection="false"
+                     BeanClass="oracle.dss.util.ErrorHandler"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="controllerActions" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.ControllerActions"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="addModelListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ModelListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeModelListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ModelListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addDataListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.DataListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeDataListener"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.DataListener"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="pivotGestureHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="canPivot"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+    <ParameterInfo id="p5" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="drillGestureHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="canDrill"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="pageChangeHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="pageChangeHappened"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDrillingEnabled"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDrillingEnabled"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="viewDataChanged"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.DataChangedEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="SelectionType"
+          Package="oracle.adf.view.faces.bi.component.graph.GraphSelection"
+          BeanClass="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+          isJavaBased="true">
+  <MethodAccessor IsCollection="true"
+                  Type="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+                  BeanClass="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+                  id="values" ReturnNodeName="SelectionType"
+                  CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+                  BeanClass="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+                  id="valueOf" ReturnNodeName="SelectionType">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+                  BeanClass="oracle.adf.view.faces.bi.component.graph.GraphSelection.SelectionType"
+                  id="convertStringToEnum" ReturnNodeName="SelectionType">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

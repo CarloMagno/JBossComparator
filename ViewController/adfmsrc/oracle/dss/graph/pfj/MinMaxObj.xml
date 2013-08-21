@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="MinMaxObj" Package="oracle.dss.graph.pfj"
+          BeanClass="oracle.dss.graph.pfj.MinMaxObj" isJavaBased="true">
+  <Attribute Name="adjMax" IsUpdateable="0" Type="double"/>
+  <Attribute Name="adjMin" IsUpdateable="0" Type="double"/>
+  <Attribute Name="rawMax" IsUpdateable="0" Type="double"/>
+  <Attribute Name="rawMin" IsUpdateable="0" Type="double"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDataDerived"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isValid"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="testRawValue"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.graph.pfj.MinMaxObj"
+                     BeanClass="oracle.dss.graph.pfj.MinMaxObj" id="MinMaxObj">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="double" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.graph.pfj.MinMaxObj"
+                     BeanClass="oracle.dss.graph.pfj.MinMaxObj" id="MinMaxObj">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.graph.pfj.MinMaxObj"
+                     BeanClass="oracle.dss.graph.pfj.MinMaxObj" id="MinMaxObj">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.graph.pfj.MinMaxObj"
+                     BeanClass="oracle.dss.graph.pfj.MinMaxObj" id="MinMaxObj"/>
+</JavaBean>

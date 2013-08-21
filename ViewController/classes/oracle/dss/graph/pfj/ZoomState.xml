@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ZoomState" Package="oracle.dss.graph.pfj"
+          BeanClass="oracle.dss.graph.pfj.ZoomState" isJavaBased="true">
+  <Attribute Name="zoomedAxes" IsUpdateable="0" Type="int"/>
+  <MethodAccessor IsCollection="false" Type="void" id="ChartFrame"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="double" isStructured="false"/>
+    <ParameterInfo id="p3" Type="double" isStructured="false"/>
+    <ParameterInfo id="p4" Type="double" isStructured="false"/>
+    <ParameterInfo id="p5" Type="double" isStructured="false"/>
+    <ParameterInfo id="p6" Type="int" isStructured="false"/>
+    <ParameterInfo id="p7" Type="int" isStructured="false"/>
+    <ParameterInfo id="p8" Type="int" isStructured="false"/>
+    <ParameterInfo id="p9" Type="int" isStructured="false"/>
+    <ParameterInfo id="p10" Type="oracle.dss.graph.pfj.AxisDescriptor"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="ChartFrame"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="double" isStructured="false"/>
+    <ParameterInfo id="p3" Type="double" isStructured="false"/>
+    <ParameterInfo id="p4" Type="double" isStructured="false"/>
+    <ParameterInfo id="p5" Type="double" isStructured="false"/>
+    <ParameterInfo id="p6" Type="int" isStructured="false"/>
+    <ParameterInfo id="p7" Type="int" isStructured="false"/>
+    <ParameterInfo id="p8" Type="int" isStructured="false"/>
+    <ParameterInfo id="p9" Type="int" isStructured="false"/>
+    <ParameterInfo id="p10" Type="oracle.dss.graph.pfj.AxisDescriptor"
+                   isStructured="true"/>
+    <ParameterInfo id="p11" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p12" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p13" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p14" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p15" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p16" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p17" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.dss.graph.pfj.OrdinalAxisFragment"
+                  BeanClass="oracle.dss.graph.pfj.OrdinalAxisFragment"
+                  id="getOrdinalAxisFragment"
+                  ReturnNodeName="OrdinalAxisFragment">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.graph.pfj.MinMaxObj"
+                  BeanClass="oracle.dss.graph.pfj.MinMaxObj" id="getScaleMinMax"
+                  ReturnNodeName="MinMaxObj">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isZoomed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isAutoMin"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isAutoMax"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.graph.pfj.ZoomState"
+                     BeanClass="oracle.dss.graph.pfj.ZoomState" id="ZoomState"/>
+</JavaBean>

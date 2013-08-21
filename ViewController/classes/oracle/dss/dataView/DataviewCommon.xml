@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="DataviewCommon" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.DataviewCommon" isJavaBased="true">
+  <Attribute Name="zoomFactor" IsUpdateable="0" Type="int"/>
+  <Attribute Name="locale" IsUpdateable="0" Type="java.util.Locale"/>
+  <Attribute Name="HTMLPagingControlWidth" Type="int"/>
+  <Attribute Name="viewType" IsUpdateable="0" Type="int"/>
+  <AccessorAttribute id="errorHandler" IsCollection="false"
+                     BeanClass="oracle.dss.util.ErrorHandler"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="fontList" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.FontList"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="model" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.Model"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataSource" IsCollection="false"
+                     BeanClass="oracle.dss.util.DataSource"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataviewFootnote" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.DataviewTitles"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataviewSubtitle" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.DataviewTitles"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="dataviewTitle" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.DataviewTitles"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="tokenSubstitution" IsCollection="false"
+                     BeanClass="oracle.dss.dataView.TokenSubstitution"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="java.awt.Font"
+                  BeanClass="java.awt.Font" id="scaleFont"
+                  ReturnNodeName="Font">
+    <ParameterInfo id="p0" Type="java.awt.Font" isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getIntlString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getIntlString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.util.ResourceBundle"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataViewStyleSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaViewStyleSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetaShortLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMetadataShortLabelSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataUnformattedSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isDataViewFormatSupported" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMemberMetadataLabelTypeSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isLayerMetadataLabelTypeSupported"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="repaint"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="metadataStyleChanged"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="dataStyleChanged"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="dataFormatChanged"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.util.WaitData"
+                  BeanClass="oracle.dss.util.WaitData" id="getWaitDataForRow"
+                  ReturnNodeName="WaitData">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setWaitDataForRow"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.WaitData" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setHTMLPagingControlAutosubmit" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isHTMLPagingControlAutosubmit" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.util.BitSet"
+                  id="createPropertyOverrideFlags" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setPropertyOverrideFlags"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.util.BitSet" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.util.BitSet" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isPropertyOverrideFlag" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.util.BitSet" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getLayerMetadataLabelType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getMemberMetadataLabelType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setPagingControlVisible"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isPagingControlVisible" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="int"
+                  id="convertComponentTypeToInteger" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="convertComponentTypeToString" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="BufferCapabilities" Package="java.awt"
+          BeanClass="java.awt.BufferCapabilities" isJavaBased="true">
+  <AccessorAttribute id="frontBufferCapabilities" IsCollection="false"
+                     BeanClass="java.awt.ImageCapabilities"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="backBufferCapabilities" IsCollection="false"
+                     BeanClass="java.awt.ImageCapabilities"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="flipContents" IsCollection="false"
+                     BeanClass="java.awt.BufferCapabilities.FlipContents"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isPageFlipping"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isFullScreenRequired"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isMultiBufferAvailable" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="java.awt.BufferCapabilities"
+                     BeanClass="java.awt.BufferCapabilities"
+                     id="BufferCapabilities">
+    <ParameterInfo id="frontCaps" Type="java.awt.ImageCapabilities"
+                   isStructured="true"/>
+    <ParameterInfo id="backCaps" Type="java.awt.ImageCapabilities"
+                   isStructured="true"/>
+    <ParameterInfo id="flipContents"
+                   Type="java.awt.BufferCapabilities.FlipContents"
+                   isStructured="true"/>
+  </ConstructorMethod>
+</JavaBean>

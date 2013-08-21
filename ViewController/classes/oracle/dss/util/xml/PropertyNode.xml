@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="PropertyNode" Package="oracle.dss.util.xml"
+          BeanClass="oracle.dss.util.xml.PropertyNode" isJavaBased="true">
+  <Attribute Name="valueAsString" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="valueAsBoolean" IsUpdateable="0" Type="boolean"/>
+  <Attribute Name="valueAsInteger" IsUpdateable="0" Type="int"/>
+  <Attribute Name="valueAsDouble" IsUpdateable="0" Type="double"/>
+  <Attribute Name="valueAsLong" IsUpdateable="0" Type="long"/>
+  <Attribute Name="valueAsCharacter" IsUpdateable="0" Type="char"/>
+  <Attribute Name="name" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="implObject" IsUpdateable="0" Type="java.lang.Object"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="createEscapes" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.xml.PropertyNode"
+                     BeanClass="oracle.dss.util.xml.PropertyNode"
+                     id="PropertyNode">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="char" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.xml.PropertyNode"
+                     BeanClass="oracle.dss.util.xml.PropertyNode"
+                     id="PropertyNode">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.xml.PropertyNode"
+                     BeanClass="oracle.dss.util.xml.PropertyNode"
+                     id="PropertyNode">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="long" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.xml.PropertyNode"
+                     BeanClass="oracle.dss.util.xml.PropertyNode"
+                     id="PropertyNode">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.xml.PropertyNode"
+                     BeanClass="oracle.dss.util.xml.PropertyNode"
+                     id="PropertyNode">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.xml.PropertyNode"
+                     BeanClass="oracle.dss.util.xml.PropertyNode"
+                     id="PropertyNode">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

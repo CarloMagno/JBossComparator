@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="PersistableAttributes" Package="oracle.dss.util.persistence"
+          BeanClass="oracle.dss.util.persistence.PersistableAttributes"
+          isJavaBased="true">
+  <Attribute Name="UOID" Type="java.lang.String"/>
+  <Attribute Name="newUOID" Type="java.lang.String"/>
+  <Attribute Name="generation" Type="int"/>
+  <Attribute Name="objectFullPathName" IsUpdateable="0"
+             Type="java.lang.String"/>
+  <Attribute Name="timeDateCreated" Type="java.util.Date"/>
+  <Attribute Name="timeDateModified" Type="java.util.Date"/>
+  <Attribute Name="timeDateLastAccessed" Type="java.util.Date"/>
+  <Attribute Name="createdBy" Type="java.lang.String"/>
+  <Attribute Name="modifiedBy" Type="java.lang.String"/>
+  <Attribute Name="userVisible" IsUpdateable="0" Type="boolean"/>
+  <Attribute Name="objectName" Type="java.lang.String"/>
+  <Attribute Name="objectLabel" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="description" Type="java.lang.String"/>
+  <Attribute Name="keywords" Type="java.lang.String"/>
+  <Attribute Name="application" Type="java.lang.String"/>
+  <Attribute Name="database" Type="java.lang.String"/>
+  <Attribute Name="applicationSubType" Type="java.lang.String"/>
+  <Attribute Name="objectType" Type="java.lang.String"/>
+  <Attribute Name="objectTypeVersion" Type="int"/>
+  <Attribute Name="title" Type="java.lang.String"/>
+  <Attribute Name="compSubType1" Type="java.lang.String"/>
+  <Attribute Name="compSubType2" Type="java.lang.String"/>
+  <Attribute Name="compSubType3" Type="java.lang.String"/>
+  <AccessorAttribute id="extensibleComponentAttributes" IsCollection="false"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttributes"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="untypedAttributes" IsCollection="false"
+                     BeanClass="javax.naming.directory.Attributes"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setName"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setVisible"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setFullPath"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isAnythingOverridden"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="clearUsedBits"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="dump"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="merge"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.dss.util.persistence.PersistableAttributes"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="clearTrackingAttributes"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isObjectNameUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setObjectNameUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDescriptionUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setDescriptionUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isKeywordsUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setKeywordsUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isApplicationUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setApplicationUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDatabaseUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setDatabaseUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isApplicationSubTypeUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setApplicationSubTypeUsed" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isObjectTypeUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setObjectTypeUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="isObjectTypeVersionUsed" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setObjectTypeVersionUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isTitleUsed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setTitleUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCompSubType1Used"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setCompSubType1Used"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCompSubType2Used"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setCompSubType2Used"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isCompSubType3Used"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setCompSubType3Used"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="setExtensibleComponentAttributesUsed"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.PersistableAttributes"
+                     BeanClass="oracle.dss.util.persistence.PersistableAttributes"
+                     id="PersistableAttributes"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.PersistableAttributes"
+                     BeanClass="oracle.dss.util.persistence.PersistableAttributes"
+                     id="PersistableAttributes">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p5" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.PersistableAttributes"
+                     BeanClass="oracle.dss.util.persistence.PersistableAttributes"
+                     id="PersistableAttributes">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.util.Date" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.util.Date" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p5" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p6" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p7" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p8" Type="java.util.Date" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

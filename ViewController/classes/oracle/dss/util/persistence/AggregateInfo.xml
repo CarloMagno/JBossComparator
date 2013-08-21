@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="AggregateInfo" Package="oracle.dss.util.persistence"
+          BeanClass="oracle.dss.util.persistence.AggregateInfo"
+          isJavaBased="true">
+  <Attribute Name="sequenceInfo" IsUpdateable="0" Type="int"/>
+  <AccessorAttribute id="persistable" IsCollection="false"
+                     BeanClass="oracle.dss.util.persistence.Persistable"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="byValue"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.AggregateInfo"
+                     BeanClass="oracle.dss.util.persistence.AggregateInfo"
+                     id="AggregateInfo">
+    <ParameterInfo id="p0" Type="oracle.dss.util.persistence.Persistable"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.AggregateInfo"
+                     BeanClass="oracle.dss.util.persistence.AggregateInfo"
+                     id="AggregateInfo">
+    <ParameterInfo id="p0" Type="oracle.dss.util.persistence.Persistable"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

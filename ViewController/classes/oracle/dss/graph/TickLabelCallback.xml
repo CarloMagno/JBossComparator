@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="TickLabelCallback" Package="oracle.dss.graph"
+          BeanClass="oracle.dss.graph.TickLabelCallback" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getTickLabel"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.graph.TickLabelInfo"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

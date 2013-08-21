@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="AWTEvent" Package="java.awt" BeanClass="java.awt.AWTEvent"
+          isJavaBased="true">
+  <Attribute Name="ID" IsUpdateable="0" Type="int"/>
+  <Attribute Name="source" Type="java.lang.Object"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="paramString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="java.awt.AWTEvent"
+                     BeanClass="java.awt.AWTEvent" id="AWTEvent">
+    <ParameterInfo id="source" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="id" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="java.awt.AWTEvent"
+                     BeanClass="java.awt.AWTEvent" id="AWTEvent">
+    <ParameterInfo id="event" Type="java.awt.Event" isStructured="true"/>
+  </ConstructorMethod>
+</JavaBean>

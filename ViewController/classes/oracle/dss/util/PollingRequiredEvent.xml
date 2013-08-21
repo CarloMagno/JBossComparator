@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="PollingRequiredEvent" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.PollingRequiredEvent" isJavaBased="true">
+  <Attribute Name="source" IsUpdateable="0" Type="java.lang.Object"/>
+  <AccessorAttribute id="status" IsCollection="false"
+                     BeanClass="oracle.dss.util.StatusInfo"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.PollingRequiredEvent"
+                     BeanClass="oracle.dss.util.PollingRequiredEvent"
+                     id="PollingRequiredEvent">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.StatusInfo"
+                   isStructured="true"/>
+  </ConstructorMethod>
+</JavaBean>

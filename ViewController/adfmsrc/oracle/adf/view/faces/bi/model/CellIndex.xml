@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="CellIndex" Package="oracle.adf.view.faces.bi.model"
+          BeanClass="oracle.adf.view.faces.bi.model.CellIndex"
+          isJavaBased="true">
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.adf.view.faces.bi.model.CellIndex"
+                     BeanClass="oracle.adf.view.faces.bi.model.CellIndex"
+                     id="CellIndex"/>
+</JavaBean>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ComponentAttributes" Package="oracle.dss.util.persistence"
+          BeanClass="oracle.dss.util.persistence.ComponentAttributes"
+          isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="put"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.persistence.ComponentAttribute"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="size"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.dss.util.persistence.ComponentAttribute"
+                  BeanClass="oracle.dss.util.persistence.ComponentAttribute"
+                  id="getComponentAttribute"
+                  ReturnNodeName="ComponentAttribute">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="clear"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="remove"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.persistence.ComponentAttribute"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.ComponentAttributes"
+                     BeanClass="oracle.dss.util.persistence.ComponentAttributes"
+                     id="ComponentAttributes"/>
+</JavaBean>

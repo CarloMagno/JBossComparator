@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="XMLContext" Package="oracle.dss.util.persistence"
+          BeanClass="oracle.dss.util.persistence.XMLContext" isJavaBased="true">
+  <Attribute Name="returningFlag" Type="boolean"/>
+  <AccessorAttribute id="scope" IsCollection="false"
+                     BeanClass="oracle.dss.util.persistence.ObjectScope"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isXMLUpdate"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setXMLUpdate"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.XMLContext"
+                     BeanClass="oracle.dss.util.persistence.XMLContext"
+                     id="XMLContext">
+    <ParameterInfo id="p0" Type="oracle.dss.util.persistence.ObjectScope"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.XMLContext"
+                     BeanClass="oracle.dss.util.persistence.XMLContext"
+                     id="XMLContext"/>
+</JavaBean>

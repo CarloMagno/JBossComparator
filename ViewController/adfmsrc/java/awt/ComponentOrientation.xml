@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ComponentOrientation" Package="java.awt"
+          BeanClass="java.awt.ComponentOrientation" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="boolean" id="isHorizontal"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isLeftToRight"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.awt.ComponentOrientation"
+                  BeanClass="java.awt.ComponentOrientation" id="getOrientation"
+                  ReturnNodeName="ComponentOrientation">
+    <ParameterInfo id="locale" Type="java.util.Locale" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.awt.ComponentOrientation"
+                  BeanClass="java.awt.ComponentOrientation" id="getOrientation"
+                  ReturnNodeName="ComponentOrientation">
+    <ParameterInfo id="bdl" Type="java.util.ResourceBundle"
+                   isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

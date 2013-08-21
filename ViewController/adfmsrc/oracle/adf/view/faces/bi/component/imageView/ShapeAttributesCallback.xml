@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ShapeAttributesCallback"
+          Package="oracle.adf.view.faces.bi.component.imageView"
+          BeanClass="oracle.adf.view.faces.bi.component.imageView.ShapeAttributesCallback"
+          isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getClickAction" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getAlt"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isClickable"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getHref"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getFormatType" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isNohref"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getOnBlur"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getOnClick"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getOnDblClick" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getOnFocus"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getOnKeyDown"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getOnKeyPress" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getOnKeyUp"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getOnMouseDown" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getOnMouseMove" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getOnMouseOut" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getOnMouseOver" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getOnMouseUp"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getTabindex"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getTarget"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="getTitle"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

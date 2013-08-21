@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="NameParser" Package="javax.naming"
+          BeanClass="javax.naming.NameParser" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="javax.naming.Name"
+                  BeanClass="javax.naming.Name" id="parse"
+                  ReturnNodeName="Name">
+    <ParameterInfo id="name" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

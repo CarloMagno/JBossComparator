@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="PathIterator" Package="java.awt.geom"
+          BeanClass="java.awt.geom.PathIterator" isJavaBased="true">
+  <Attribute Name="windingRule" IsUpdateable="0" Type="int"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDone"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="next"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="int" id="currentSegment"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="coords" Type="float[]" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="currentSegment"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="coords" Type="double[]" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

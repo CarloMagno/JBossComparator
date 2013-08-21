@@ -1,12 +1,17 @@
 package jbosscomp.view.backing;
 
 
+import java.math.BigDecimal;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.faces.component.UIViewRoot;
 import javax.faces.context.FacesContext;
 
+import oracle.adf.model.BindingContext;
+import oracle.adf.model.binding.DCBindingContainer;
+import oracle.adf.model.binding.DCIteratorBinding;
 import oracle.adf.view.faces.bi.component.graph.UIGraph;
 import oracle.adf.view.rich.component.rich.RichDocument;
 import oracle.adf.view.rich.component.rich.RichForm;
@@ -18,6 +23,9 @@ import oracle.adf.view.rich.component.rich.layout.RichPanelGroupLayout;
 import oracle.adf.view.rich.component.rich.layout.RichPanelTabbed;
 import oracle.adf.view.rich.component.rich.layout.RichShowDetailItem;
 import oracle.adf.view.rich.component.rich.output.RichSeparator;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 public class Comparator {
     private RichForm f1;
@@ -74,12 +82,17 @@ public class Comparator {
     private UIGraph barGraph1;
     private RichPanelBorderLayout pbl1;
 
-    private static Double costY1 = 0.0;
-    private static Double costY2;
-    private static Double costY3;
+    private static BigDecimal costY1;
+    private static BigDecimal costY2;
+    private static BigDecimal costY3;
 
+    public static Object get(String expr) {
+      FacesContext ctx = FacesContext.getCurrentInstance();
+      return ctx.getApplication().evaluateExpressionGet(ctx, expr,Object.class);
+    }
 
     public List getTabularData() {       
+        /*
         if(totalCostY1 == null)costY1 = new Double((String)totalCostY1.getValue());
         else costY1++;
 
@@ -88,20 +101,44 @@ public class Comparator {
         
         if(totalCostY3 == null)costY3 = new Double((String)totalCostY3.getValue());
         else costY3 = 0.0;
+        */
+        
+        /*
+        DCBindingContainer dcBindings = (DCBindingContainer)BindingContext.getCurrent().getCurrentBindingsEntry(); 
+        DCIteratorBinding iterator = (DCIteratorBinding)dcBindings.get("Comparator"); 
+        String attribute = (String) iterator.getCurrentRow().getAttribute("SomeAttributeName");
+        */
+        
+        RichInputNumberSpinbox rins1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY1}");
+        RichInputNumberSpinbox rins2 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY2}");
+        RichInputNumberSpinbox rins3 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY3}");
+        
+        System.out.println("rins1 = "+rins1.toString());
+        System.out.println("rins2 = "+rins2.toString());
+        System.out.println("rins3 = "+rins3.toString());
+        
+        costY1 = new BigDecimal (rins1.getValue().toString());
+        costY2 = new BigDecimal (rins2.getValue().toString());
+        costY3 = new BigDecimal (rins3.getValue().toString());
+    
+        System.out.println("costY1 = "+costY1);
+        System.out.println("costY2 = "+costY2);
+        System.out.println("costY3 = "+costY3);
+        
         
         ArrayList list = new ArrayList();
         String[] rowLabels  = new String[] {"Oracle", "JBoss"};
         String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3"};
-        Double [] [] values = new Double[][]{
+        BigDecimal [] [] values = new BigDecimal[][]{
             {costY1, costY2, costY3},
-            {1.0, 2.0, 3.0}
+            {new BigDecimal(1.0), new BigDecimal(2.0), new BigDecimal(3.0)}
             };
         for (int c = 0; c < colLabels.length; c++)
         {
          for (int r = 0; r < rowLabels.length; r++)
            {
             list.add (new Object [] {colLabels[c], rowLabels[r], 
-                new Double (values[r][c])});
+                new Double (values[r][c].doubleValue())});
            }
         }
         return list;

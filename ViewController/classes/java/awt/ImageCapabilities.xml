@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ImageCapabilities" Package="java.awt"
+          BeanClass="java.awt.ImageCapabilities" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="boolean" id="isAccelerated"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isTrueVolatile"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="java.awt.ImageCapabilities"
+                     BeanClass="java.awt.ImageCapabilities"
+                     id="ImageCapabilities">
+    <ParameterInfo id="accelerated" Type="boolean" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

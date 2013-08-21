@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="WaitDataAvailableEvent" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.WaitDataAvailableEvent" isJavaBased="true">
+  <Attribute Name="source" IsUpdateable="0" Type="java.lang.Object"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isDataDirty"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isColumnDirty"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isRowDirty"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.WaitDataAvailableEvent"
+                     BeanClass="oracle.dss.util.WaitDataAvailableEvent"
+                     id="WaitDataAvailableEvent">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

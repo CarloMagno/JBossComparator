@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="PointSelectionListener" Package="oracle.adf.view.faces.bi.event"
+          BeanClass="oracle.adf.view.faces.bi.event.PointSelectionListener"
+          isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="processSelectedPoint"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0"
+                   Type="oracle.adf.view.faces.bi.event.PointSelectionEvent"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

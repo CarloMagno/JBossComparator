@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="BaseViewFormatCallback" Package="oracle.dss.util.format"
+          BeanClass="oracle.dss.util.format.BaseViewFormatCallback"
+          isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="void" id="formatChanged"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.Object" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

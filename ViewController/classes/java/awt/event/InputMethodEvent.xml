@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="InputMethodEvent" Package="java.awt.event"
+          BeanClass="java.awt.event.InputMethodEvent" isJavaBased="true">
+  <Attribute Name="committedCharacterCount" IsUpdateable="0" Type="int"/>
+  <Attribute Name="when" IsUpdateable="0" Type="long"/>
+  <Attribute Name="ID" IsUpdateable="0" Type="int"/>
+  <Attribute Name="source" Type="java.lang.Object"/>
+  <AccessorAttribute id="text" IsCollection="false"
+                     BeanClass="java.text.AttributedCharacterIterator"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="caret" IsCollection="false"
+                     BeanClass="java.awt.font.TextHitInfo"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="visiblePosition" IsCollection="false"
+                     BeanClass="java.awt.font.TextHitInfo"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="consume"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isConsumed"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="paramString"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="java.awt.event.InputMethodEvent"
+                     BeanClass="java.awt.event.InputMethodEvent"
+                     id="InputMethodEvent">
+    <ParameterInfo id="source" Type="java.awt.Component" isStructured="true"/>
+    <ParameterInfo id="id" Type="int" isStructured="false"/>
+    <ParameterInfo id="caret" Type="java.awt.font.TextHitInfo"
+                   isStructured="true"/>
+    <ParameterInfo id="visiblePosition" Type="java.awt.font.TextHitInfo"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="java.awt.event.InputMethodEvent"
+                     BeanClass="java.awt.event.InputMethodEvent"
+                     id="InputMethodEvent">
+    <ParameterInfo id="source" Type="java.awt.Component" isStructured="true"/>
+    <ParameterInfo id="id" Type="int" isStructured="false"/>
+    <ParameterInfo id="text" Type="java.text.AttributedCharacterIterator"
+                   isStructured="true"/>
+    <ParameterInfo id="committedCharacterCount" Type="int"
+                   isStructured="false"/>
+    <ParameterInfo id="caret" Type="java.awt.font.TextHitInfo"
+                   isStructured="true"/>
+    <ParameterInfo id="visiblePosition" Type="java.awt.font.TextHitInfo"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="java.awt.event.InputMethodEvent"
+                     BeanClass="java.awt.event.InputMethodEvent"
+                     id="InputMethodEvent">
+    <ParameterInfo id="source" Type="java.awt.Component" isStructured="true"/>
+    <ParameterInfo id="id" Type="int" isStructured="false"/>
+    <ParameterInfo id="when" Type="long" isStructured="false"/>
+    <ParameterInfo id="text" Type="java.text.AttributedCharacterIterator"
+                   isStructured="true"/>
+    <ParameterInfo id="committedCharacterCount" Type="int"
+                   isStructured="false"/>
+    <ParameterInfo id="caret" Type="java.awt.font.TextHitInfo"
+                   isStructured="true"/>
+    <ParameterInfo id="visiblePosition" Type="java.awt.font.TextHitInfo"
+                   isStructured="true"/>
+  </ConstructorMethod>
+</JavaBean>

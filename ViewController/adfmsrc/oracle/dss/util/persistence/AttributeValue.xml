@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="AttributeValue" Package="oracle.dss.util.persistence"
+          BeanClass="oracle.dss.util.persistence.AttributeValue"
+          isJavaBased="true">
+  <Attribute Name="type" IsUpdateable="0" Type="int"/>
+  <Attribute Name="value" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="unescapedValue" IsUpdateable="0" Type="java.lang.String"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="equals"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.util.persistence.AttributeValue"
+                     BeanClass="oracle.dss.util.persistence.AttributeValue"
+                     id="AttributeValue">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Object" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

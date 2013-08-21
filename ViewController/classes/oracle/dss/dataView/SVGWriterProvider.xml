@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="SVGWriterProvider" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.SVGWriterProvider" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="oracle.dss.presutil.SVGWriter"
+                  BeanClass="oracle.dss.presutil.SVGWriter" id="createSVGWriter"
+                  ReturnNodeName="SVGWriter">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.CommonDataview"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.io.OutputStream" isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="oracle.dss.presutil.SVGWriter"
+                  BeanClass="oracle.dss.presutil.SVGWriter" id="createSVGWriter"
+                  ReturnNodeName="SVGWriter">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.CommonDataview"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.io.Writer" isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.dss.dataView.ImageViewExportXMLWriter"
+                  BeanClass="oracle.dss.dataView.ImageViewExportXMLWriter"
+                  id="createExportXMLWriter"
+                  ReturnNodeName="ImageViewExportXMLWriter">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ImageView"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.io.OutputStream" isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false"
+                  Type="oracle.dss.dataView.ImageViewExportXMLWriter"
+                  BeanClass="oracle.dss.dataView.ImageViewExportXMLWriter"
+                  id="createExportXMLWriter"
+                  ReturnNodeName="ImageViewExportXMLWriter">
+    <ParameterInfo id="p0" Type="oracle.dss.dataView.ImageView"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.io.Writer" isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

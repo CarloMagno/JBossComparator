@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Attribute" Package="javax.naming.directory"
+          BeanClass="javax.naming.directory.Attribute" isJavaBased="true">
+  <Attribute Name="ID" IsUpdateable="0" Type="java.lang.String"/>
+  <AccessorAttribute id="all" IsCollection="true"
+                     Type="javax.naming.NamingEnumeration&lt;?>"
+                     CollectionBeanClass="UpdateableSingleValue">
+    <Attribute Name="element" Type="javax.naming.NamingEnumeration&lt;?>"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="attributeSyntaxDefinition" IsCollection="false"
+                     BeanClass="javax.naming.directory.DirContext"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="attributeDefinition" IsCollection="false"
+                     BeanClass="javax.naming.directory.DirContext"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="get"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="int" id="size"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="contains"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="attrVal" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="add"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="attrVal" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="remove"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="attrval" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="clear"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isOrdered"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="get"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="ix" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="remove"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="ix" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="add"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="ix" Type="int" isStructured="false"/>
+    <ParameterInfo id="attrVal" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="set"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="ix" Type="int" isStructured="false"/>
+    <ParameterInfo id="attrVal" Type="java.lang.Object" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

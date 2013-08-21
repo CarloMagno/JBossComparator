@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ContainerEvent" Package="java.awt.event"
+          BeanClass="java.awt.event.ContainerEvent" isJavaBased="true">
+  <Attribute Name="ID" IsUpdateable="0" Type="int"/>
+  <Attribute Name="source" Type="java.lang.Object"/>
+  <AccessorAttribute id="container" IsCollection="false"
+                     BeanClass="java.awt.Container"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="child" IsCollection="false"
+                     BeanClass="java.awt.Component"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="component" IsCollection="false"
+                     BeanClass="java.awt.Component"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="paramString"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="toString"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="java.awt.event.ContainerEvent"
+                     BeanClass="java.awt.event.ContainerEvent"
+                     id="ContainerEvent">
+    <ParameterInfo id="source" Type="java.awt.Component" isStructured="true"/>
+    <ParameterInfo id="id" Type="int" isStructured="false"/>
+    <ParameterInfo id="child" Type="java.awt.Component" isStructured="true"/>
+  </ConstructorMethod>
+</JavaBean>

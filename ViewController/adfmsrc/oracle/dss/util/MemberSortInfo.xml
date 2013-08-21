@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="MemberSortInfo" Package="oracle.dss.util"
+          BeanClass="oracle.dss.util.MemberSortInfo" isJavaBased="true">
+  <Attribute Name="dimension" Type="java.lang.String"/>
+  <AccessorAttribute id="hierarchy" IsCollection="true"
+                     Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="membersToMove" IsCollection="true"
+                     Type="java.lang.String[][]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="memberLevels" IsCollection="true"
+                     Type="java.lang.String[][]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="moveType" IsCollection="true" Type="int[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="int"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="refMember" IsCollection="true"
+                     Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="refMemberLevel" IsCollection="true"
+                     Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.MemberSortInfo"
+                     BeanClass="oracle.dss.util.MemberSortInfo"
+                     id="MemberSortInfo">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String[][]" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.String[][]" isStructured="false"/>
+    <ParameterInfo id="p4" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p5" Type="java.lang.String[]" isStructured="false"/>
+    <ParameterInfo id="p6" Type="java.lang.String[]" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="oracle.dss.util.MemberSortInfo"
+                     BeanClass="oracle.dss.util.MemberSortInfo"
+                     id="MemberSortInfo">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="CustomToolTipCallback" Package="oracle.dss.graph"
+          BeanClass="oracle.dss.graph.CustomToolTipCallback" isJavaBased="true">
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getToolTipText" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.dataView.ComponentHandle"
+                   isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

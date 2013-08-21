@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="Parameter" Package="oracle.dss.util.parameters"
+          BeanClass="oracle.dss.util.parameters.Parameter" isJavaBased="true">
+  <Attribute Name="defaultValue" Type="java.lang.Object"/>
+  <Attribute Name="description" Type="java.lang.String"/>
+  <Attribute Name="format" Type="java.lang.String"/>
+  <Attribute Name="label" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="name" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="prompt" Type="java.lang.String"/>
+  <Attribute Name="type" IsUpdateable="0" Type="int"/>
+  <Attribute Name="validationContext" Type="java.lang.Object"/>
+  <AccessorAttribute id="displayValueType" IsCollection="true"
+                     Type="oracle.dss.util.parameters.ParameterMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <AccessorAttribute id="reservedWords" IsCollection="true"
+                     Type="java.lang.String[]"
+                     CollectionBeanClass="UpdateableCollection">
+    <Attribute Name="element" Type="java.lang.String"/>
+  </AccessorAttribute>
+  <AccessorAttribute id="supportedDisplayValueTypes" IsCollection="true"
+                     Type="oracle.dss.util.parameters.ParameterMap"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="false" Type="java.util.HashMap"
+                  id="getDefaultValue" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="oracle.dss.util.parameters.ParameterMap"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDefaultValue"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.util.HashMap" isStructured="false"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.parameters.ParameterMap"
+                   isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="getProperty"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setProperty"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="canAcceptMultipleValues" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="setAcceptMultipleValues"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

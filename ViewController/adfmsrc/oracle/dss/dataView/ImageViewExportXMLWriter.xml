@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.62.29"
+          id="ImageViewExportXMLWriter" Package="oracle.dss.dataView"
+          BeanClass="oracle.dss.dataView.ImageViewExportXMLWriter"
+          isJavaBased="true">
+  <Attribute Name="characterEncoding" IsUpdateable="0" Type="java.lang.String"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startRootElement"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="endRootElement"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startCircleElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="double" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="startCircleOrOvalElement" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Rectangle" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean"
+                  id="startCircleOrOvalElement" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.geom.Arc2D" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startLineElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startLineElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="double" isStructured="false"/>
+    <ParameterInfo id="p3" Type="double" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startOvalElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="double" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="double" isStructured="false"/>
+    <ParameterInfo id="p3" Type="double" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startOvalElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Rectangle" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startPathElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Shape" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startPolygonElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int[]" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startPolygonElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Polygon" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startPolylineElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Point[]" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startRectElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+    <ParameterInfo id="p3" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startRectElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Rectangle" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startRectElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Rectangle" isStructured="true"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startTextElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="startTextElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="int" id="getFontID"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeFontIndexAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeShadowAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Color" isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p5" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p6" Type="java.lang.Integer" isStructured="false"/>
+    <ParameterInfo id="p7" Type="java.lang.Integer" isStructured="false"/>
+    <ParameterInfo id="p8" Type="java.lang.Integer" isStructured="false"/>
+    <ParameterInfo id="p9" Type="java.lang.Integer" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeBevelAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Color" isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.awt.Color" isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p5" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p6" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p7" Type="java.lang.Integer" isStructured="false"/>
+    <ParameterInfo id="p8" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeGlowAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Color" isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p3" Type="java.lang.Double" isStructured="false"/>
+    <ParameterInfo id="p4" Type="java.lang.Integer" isStructured="false"/>
+    <ParameterInfo id="p5" Type="java.lang.Integer" isStructured="false"/>
+    <ParameterInfo id="p6" Type="java.lang.Integer" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeCachedAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeCachedAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeCachedAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeCachedAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeCachedAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.awt.Color" isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getFontAttributes" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Font" isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.awt.Color" isStructured="true"/>
+    <ParameterInfo id="p2" Type="boolean" isStructured="false"/>
+    <ParameterInfo id="p3" Type="oracle.dss.util.ErrorHandler"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.awt.Color" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasShapeAttributes"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="writeShapeAttributesElement" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="hasAlt"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void"
+                  id="writeCustomPropertyAttribute" ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="writeTooltipAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String[]" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setUseDataIds"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isUseDataIds"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isActiveDataService"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isPPRAnimation"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isAnimationOnDisplay"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="writeAnimationAttributes"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.awt.FontMetrics"
+                  BeanClass="java.awt.FontMetrics" id="getFontMetrics"
+                  ReturnNodeName="FontMetrics">
+    <ParameterInfo id="p0" Type="java.awt.Graphics" isStructured="true"/>
+    <ParameterInfo id="p1" Type="java.awt.Font" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="writeMetadataElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.util.Map" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="startHandleElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.util.Map" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setEncodingScriptTag"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="isEncodingScriptTag"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="close"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="flush"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="startElement"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="endElement"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="writeAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="double" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeAttribute"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="boolean" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeText"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="write"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="startCData"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="endCData"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="escape"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="colorToHex"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Color" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="colorToHexWithAlpha" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.awt.Color" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="writeXMLHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="closeStartTag"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     BeanClass="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     id="ImageViewExportXMLWriter">
+    <ParameterInfo id="p0" Type="java.io.Writer" isStructured="true"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.ErrorHandler"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     BeanClass="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     id="ImageViewExportXMLWriter">
+    <ParameterInfo id="p0" Type="java.io.Writer" isStructured="true"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.ErrorHandler"
+                   isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     BeanClass="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     id="ImageViewExportXMLWriter">
+    <ParameterInfo id="p0" Type="java.io.OutputStream" isStructured="true"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.ErrorHandler"
+                   isStructured="true"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true"
+                     Type="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     BeanClass="oracle.dss.dataView.ImageViewExportXMLWriter"
+                     id="ImageViewExportXMLWriter">
+    <ParameterInfo id="p0" Type="java.io.OutputStream" isStructured="true"/>
+    <ParameterInfo id="p1" Type="oracle.dss.util.ErrorHandler"
+                   isStructured="true"/>
+    <ParameterInfo id="p2" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>
