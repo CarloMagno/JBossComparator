@@ -13,9 +13,13 @@
           <f:facet name="center">
             <af:panelTabbed binding="#{backingBeanScope.backing_comparator.pt2}"
                             id="pt2">
-              <af:showDetailItem text="Oracle"
+              <af:showDetailItem text="Costs per year"
                                  binding="#{backingBeanScope.backing_comparator.sdi1}"
                                  id="sdi1" stretchChildren="first">
+                <af:activeOutputText value="Oracle"
+                                     binding="#{backingBeanScope.backing_comparator.aot1}"
+                                     id="aot1"
+                                     inlineStyle="color:Red; font-family:'Palatino Linotype'; font-size:large;"/>
                 <div align="center">
                   <af:panelGroupLayout binding="#{backingBeanScope.backing_comparator.pgl1}"
                                        id="pgl1" layout="horizontal">
@@ -132,8 +136,10 @@
                           <div align="right">
                             <af:inputNumberSpinbox label="Cores per processor"
                                                    binding="#{backingBeanScope.backing_comparator.coresProcY2}"
-                                                   id="coresProcY2" autoSubmit="true"
-                                                   value="4"/>
+                                                   id="coresProcY2"
+                                                   readOnly="true"
+                                                   value="#{backingBeanScope.backing_comparator.coresProcY1.value}"
+                                                   partialTriggers="coresProcY1"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Oracle Core Factor"
@@ -223,8 +229,10 @@
                           <div align="right">
                             <af:inputNumberSpinbox label="Cores per processor"
                                                    binding="#{backingBeanScope.backing_comparator.coresProcY3}"
-                                                   id="coresProcY3" autoSubmit="true"
-                                                   value="4"/>
+                                                   id="coresProcY3" 
+                                                   readOnly="true"
+                                                   value="#{backingBeanScope.backing_comparator.coresProcY1.value}"
+                                                   partialTriggers="coresProcY1"/>
                           </div>
                           <div align="right">
                             <af:inputNumberSpinbox label="Oracle Core Factor"
@@ -321,13 +329,6 @@
                   </af:panelGroupLayout>
                 </div>
               </af:showDetailItem>
-              
-              <af:showDetailItem text="JBoss"
-                                 binding="#{backingBeanScope.backing_comparator.sdi2}"
-                                 id="sdi2"/>
-              <af:showDetailItem text="Comparison"
-                                 binding="#{backingBeanScope.backing_comparator.sdi3}"
-                                 id="sdi3"/>
                                  
             </af:panelTabbed>
           </f:facet>

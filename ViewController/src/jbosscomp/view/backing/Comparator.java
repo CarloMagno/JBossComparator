@@ -22,6 +22,7 @@ import oracle.adf.view.rich.component.rich.layout.RichPanelBox;
 import oracle.adf.view.rich.component.rich.layout.RichPanelGroupLayout;
 import oracle.adf.view.rich.component.rich.layout.RichPanelTabbed;
 import oracle.adf.view.rich.component.rich.layout.RichShowDetailItem;
+import oracle.adf.view.rich.component.rich.output.RichActiveOutputText;
 import oracle.adf.view.rich.component.rich.output.RichSeparator;
 
 import org.apache.commons.logging.Log;
@@ -77,14 +78,13 @@ public class Comparator {
     private RichInputNumberSpinbox totalSuppY3;
     private RichSeparator s12;
     private RichInputNumberSpinbox totalCostY3;
-    private RichShowDetailItem sdi2;
-    private RichShowDetailItem sdi3;
     private UIGraph barGraph1;
     private RichPanelBorderLayout pbl1;
 
     private static BigDecimal costY1;
     private static BigDecimal costY2;
     private static BigDecimal costY3;
+    private RichActiveOutputText aot1;
 
     public static Object get(String expr) {
       FacesContext ctx = FacesContext.getCurrentInstance();
@@ -175,14 +175,6 @@ public class Comparator {
 
     public RichShowDetailItem getSdi1() {
         return sdi1;
-    }
-
-    public void setSdi2(RichShowDetailItem sdi2) {
-        this.sdi2 = sdi2;
-    }
-
-    public RichShowDetailItem getSdi2() {
-        return sdi2;
     }
 
 
@@ -531,13 +523,6 @@ public class Comparator {
         return totalCostY3;
     }
 
-    public void setSdi3(RichShowDetailItem sdi3) {
-        this.sdi3 = sdi3;
-    }
-
-    public RichShowDetailItem getSdi3() {
-        return sdi3;
-    }
 
     public void setPgl3(RichPanelGroupLayout pgl3) {
         this.pgl3 = pgl3;
@@ -570,5 +555,13 @@ public class Comparator {
 
     public RichPanelBorderLayout getPbl1() {
         return pbl1;
+    }
+
+    public void setAot1(RichActiveOutputText aot1) {
+        this.aot1 = aot1;
+    }
+
+    public RichActiveOutputText getAot1() {
+        return aot1;
     }
 }
