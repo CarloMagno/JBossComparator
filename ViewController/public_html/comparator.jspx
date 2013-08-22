@@ -189,7 +189,7 @@
                                                    binding="#{backingBeanScope.backing_comparator.totalSuppY2}"
                                                    id="totalSuppY2"
                                                    inlineStyle="color:Maroon;"
-                                                   value="#{backingBeanScope.backing_comparator.licenseCostY1.value + backingBeanScope.backing_comparator.totalLicenseY2.value * backingBeanScope.backing_comparator.suppCostY2.value div 100}"
+                                                   value="#{backingBeanScope.backing_comparator.totalSuppY1.value + backingBeanScope.backing_comparator.totalLicenseY2.value * backingBeanScope.backing_comparator.suppCostY2.value div 100}"
                                                    partialTriggers="exProcY2 newProcY2 coresProcY2 coreFactorY2 totalProcY2 licenseCostY2 licenseDiscY2 totalLicenseY2 suppCostY2 totalCostY1 totalSuppY1 suppCostY1 totalLicenseY1 licenseDiscY1 licenseCostY1 totalProcY1 coreFactorY1 coresProcY1 newProcY1 exProcY1"/>
                           </div>
                           <af:separator binding="#{backingBeanScope.backing_comparator.s10}"
@@ -281,7 +281,7 @@
                                                    id="totalSuppY3"
                                                    inlineStyle="color:Maroon;"
                                                    partialTriggers="exProcY3 newProcY3 coresProcY3 coreFactorY3 totalProcY3 licenseCostY3 licenseDiscY3 totalLicenseY3 suppCostY3 licenseCostY1 totalLicenseY1 suppCostY1 coreFactorY1 totalSuppY1 totalProcY1 licenseDiscY1 totalCostY1 coresProcY1 newProcY1 exProcY1 totalLicenseY2 totalProcY2 licenseDiscY2 licenseCostY2 coreFactorY2 coresProcY2 newProcY2 exProcY2 totalSuppY2 suppCostY2 totalCostY2"
-                                                   value="#{backingBeanScope.backing_comparator.licenseCostY1.value + backingBeanScope.backing_comparator.licenseCostY2.value + backingBeanScope.backing_comparator.totalLicenseY3.value * backingBeanScope.backing_comparator.suppCostY3.value div 100}"/>
+                                                   value="#{backingBeanScope.backing_comparator.totalSuppY2.value + backingBeanScope.backing_comparator.totalLicenseY3.value * backingBeanScope.backing_comparator.suppCostY3.value div 100}"/>
                           </div>
                           <af:separator binding="#{backingBeanScope.backing_comparator.s12}"
                                         id="s12"/>
