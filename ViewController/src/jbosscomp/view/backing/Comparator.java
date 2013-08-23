@@ -22,7 +22,6 @@ import oracle.adf.view.rich.component.rich.layout.RichPanelBox;
 import oracle.adf.view.rich.component.rich.layout.RichPanelGroupLayout;
 import oracle.adf.view.rich.component.rich.layout.RichPanelTabbed;
 import oracle.adf.view.rich.component.rich.layout.RichShowDetailItem;
-import oracle.adf.view.rich.component.rich.output.RichActiveOutputText;
 import oracle.adf.view.rich.component.rich.output.RichSeparator;
 
 import org.apache.commons.logging.Log;
@@ -36,6 +35,8 @@ public class Comparator {
     private RichShowDetailItem sdi1;
     private RichPanelGroupLayout pgl1;
     private RichPanelGroupLayout pgl3;
+    private RichPanelBox pb7;
+    private RichPanelBox pb8;
     private RichPanelBox pb1;
     private RichInputNumberSpinbox exProcY1;
     private RichInputNumberSpinbox newProcY1;
@@ -51,29 +52,11 @@ public class Comparator {
     private RichSeparator s2;
     private RichInputNumberSpinbox totalCostY1;
     private RichPanelBox pb2;
-    private RichInputNumberSpinbox exProcY2;
-    private RichInputNumberSpinbox newProcY2;
-    private RichInputNumberSpinbox coresProcY2;
-    private RichInputNumberSpinbox coreFactorY2;
-    private RichInputNumberSpinbox totalProcY2;
-    private RichInputNumberSpinbox licenseCostY2;
-    private RichInputNumberSpinbox licenseDiscY2;
-    private RichInputNumberSpinbox totalLicenseY2;
-    private RichSeparator s3;
     private RichInputNumberSpinbox suppCostY2;
     private RichInputNumberSpinbox totalSuppY2;
     private RichSeparator s10;
     private RichInputNumberSpinbox totalCostY2;
     private RichPanelBox pb3;
-    private RichInputNumberSpinbox exProcY3;
-    private RichInputNumberSpinbox newProcY3;
-    private RichInputNumberSpinbox coresProcY3;
-    private RichInputNumberSpinbox coreFactorY3;
-    private RichInputNumberSpinbox totalProcY3;
-    private RichInputNumberSpinbox licenseCostY3;
-    private RichInputNumberSpinbox licenseDiscY3;
-    private RichInputNumberSpinbox totalLicenseY3;
-    private RichSeparator s11;
     private RichInputNumberSpinbox suppCostY3;
     private RichInputNumberSpinbox totalSuppY3;
     private RichSeparator s12;
@@ -81,10 +64,30 @@ public class Comparator {
     private UIGraph barGraph1;
     private RichPanelBorderLayout pbl1;
 
+    private RichPanelBox pb4;
+    private RichPanelBox pb5;
+    private RichPanelGroupLayout pgl2;
+    private RichPanelBox pb6;
+    private RichPanelGroupLayout pgl4;
+    private RichInputNumberSpinbox jbossCoresY1;
+    private RichInputNumberSpinbox jbossManagementCostY1;
+    private RichSeparator s4;
+    private RichInputNumberSpinbox jbossTotalCostY1;
+    private RichInputNumberSpinbox managementCostY1;
+    private RichSeparator s5;
+    private RichInputNumberSpinbox otherCostY2;
+    private RichSeparator s6;
+    private RichInputNumberSpinbox otherCostY3;
+    private RichSeparator s3;
+
     private static BigDecimal costY1;
     private static BigDecimal costY2;
     private static BigDecimal costY3;
-    private RichActiveOutputText aot1;
+    private RichPanelBox pb9;
+    private RichPanelBox pb10;
+    private RichPanelGroupLayout pgl5;
+    private RichPanelGroupLayout pgl6;
+
 
     public static Object get(String expr) {
       FacesContext ctx = FacesContext.getCurrentInstance();
@@ -243,13 +246,6 @@ public class Comparator {
         return pb3;
     }
 
-    public void setS3(RichSeparator s3) {
-        this.s3 = s3;
-    }
-
-    public RichSeparator getS3() {
-        return s3;
-    }
 
     public void setS10(RichSeparator s10) {
         this.s10 = s10;
@@ -259,13 +255,6 @@ public class Comparator {
         return s10;
     }
 
-    public void setS11(RichSeparator s11) {
-        this.s11 = s11;
-    }
-
-    public RichSeparator getS11() {
-        return s11;
-    }
 
     public void setS12(RichSeparator s12) {
         this.s12 = s12;
@@ -347,69 +336,6 @@ public class Comparator {
         return totalCostY1;
     }
 
-    public void setExProcY2(RichInputNumberSpinbox exProcY2) {
-        this.exProcY2 = exProcY2;
-    }
-
-    public RichInputNumberSpinbox getExProcY2() {
-        return exProcY2;
-    }
-
-    public void setNewProcY2(RichInputNumberSpinbox newProcY2) {
-        this.newProcY2 = newProcY2;
-    }
-
-    public RichInputNumberSpinbox getNewProcY2() {
-        return newProcY2;
-    }
-
-    public void setCoresProcY2(RichInputNumberSpinbox coresProcY2) {
-        this.coresProcY2 = coresProcY2;
-    }
-
-    public RichInputNumberSpinbox getCoresProcY2() {
-        return coresProcY2;
-    }
-
-    public void setCoreFactorY2(RichInputNumberSpinbox coreFactorY2) {
-        this.coreFactorY2 = coreFactorY2;
-    }
-
-    public RichInputNumberSpinbox getCoreFactorY2() {
-        return coreFactorY2;
-    }
-
-    public void setTotalProcY2(RichInputNumberSpinbox totalProcY2) {
-        this.totalProcY2 = totalProcY2;
-    }
-
-    public RichInputNumberSpinbox getTotalProcY2() {
-        return totalProcY2;
-    }
-
-    public void setLicenseCostY2(RichInputNumberSpinbox licenseCostY2) {
-        this.licenseCostY2 = licenseCostY2;
-    }
-
-    public RichInputNumberSpinbox getLicenseCostY2() {
-        return licenseCostY2;
-    }
-
-    public void setLicenseDiscY2(RichInputNumberSpinbox licenseDiscY2) {
-        this.licenseDiscY2 = licenseDiscY2;
-    }
-
-    public RichInputNumberSpinbox getLicenseDiscY2() {
-        return licenseDiscY2;
-    }
-
-    public void setTotalLicenseY2(RichInputNumberSpinbox totalLicenseY2) {
-        this.totalLicenseY2 = totalLicenseY2;
-    }
-
-    public RichInputNumberSpinbox getTotalLicenseY2() {
-        return totalLicenseY2;
-    }
 
     public void setSuppCostY2(RichInputNumberSpinbox suppCostY2) {
         this.suppCostY2 = suppCostY2;
@@ -435,69 +361,6 @@ public class Comparator {
         return totalCostY2;
     }
 
-    public void setExProcY3(RichInputNumberSpinbox exProcY3) {
-        this.exProcY3 = exProcY3;
-    }
-
-    public RichInputNumberSpinbox getExProcY3() {
-        return exProcY3;
-    }
-
-    public void setNewProcY3(RichInputNumberSpinbox newProcY3) {
-        this.newProcY3 = newProcY3;
-    }
-
-    public RichInputNumberSpinbox getNewProcY3() {
-        return newProcY3;
-    }
-
-    public void setCoresProcY3(RichInputNumberSpinbox coresProcY3) {
-        this.coresProcY3 = coresProcY3;
-    }
-
-    public RichInputNumberSpinbox getCoresProcY3() {
-        return coresProcY3;
-    }
-
-    public void setCoreFactorY3(RichInputNumberSpinbox coreFactorY3) {
-        this.coreFactorY3 = coreFactorY3;
-    }
-
-    public RichInputNumberSpinbox getCoreFactorY3() {
-        return coreFactorY3;
-    }
-
-    public void setTotalProcY3(RichInputNumberSpinbox totalProcY3) {
-        this.totalProcY3 = totalProcY3;
-    }
-
-    public RichInputNumberSpinbox getTotalProcY3() {
-        return totalProcY3;
-    }
-
-    public void setLicenseCostY3(RichInputNumberSpinbox licenseCostY3) {
-        this.licenseCostY3 = licenseCostY3;
-    }
-
-    public RichInputNumberSpinbox getLicenseCostY3() {
-        return licenseCostY3;
-    }
-
-    public void setLicenseDiscY3(RichInputNumberSpinbox licenseDiscY3) {
-        this.licenseDiscY3 = licenseDiscY3;
-    }
-
-    public RichInputNumberSpinbox getLicenseDiscY3() {
-        return licenseDiscY3;
-    }
-
-    public void setTotalLicenseY3(RichInputNumberSpinbox totalLicenseY3) {
-        this.totalLicenseY3 = totalLicenseY3;
-    }
-
-    public RichInputNumberSpinbox getTotalLicenseY3() {
-        return totalLicenseY3;
-    }
 
     public void setSuppCostY3(RichInputNumberSpinbox suppCostY3) {
         this.suppCostY3 = suppCostY3;
@@ -557,11 +420,171 @@ public class Comparator {
         return pbl1;
     }
 
-    public void setAot1(RichActiveOutputText aot1) {
-        this.aot1 = aot1;
+    public void setPb4(RichPanelBox pb4) {
+        this.pb4 = pb4;
     }
 
-    public RichActiveOutputText getAot1() {
-        return aot1;
+    public RichPanelBox getPb4() {
+        return pb4;
+    }
+
+    public void setPgl2(RichPanelGroupLayout pgl2) {
+        this.pgl2 = pgl2;
+    }
+
+    public RichPanelGroupLayout getPgl2() {
+        return pgl2;
+    }
+
+    public void setPgl4(RichPanelGroupLayout pgl4) {
+        this.pgl4 = pgl4;
+    }
+
+    public RichPanelGroupLayout getPgl4() {
+        return pgl4;
+    }
+
+    public void setJbossCoresY1(RichInputNumberSpinbox ins1) {
+        this.jbossCoresY1 = ins1;
+    }
+
+    public RichInputNumberSpinbox getJbossCoresY1() {
+        return jbossCoresY1;
+    }
+
+    public void setJbossManagementCostY1(RichInputNumberSpinbox ins1) {
+        this.jbossManagementCostY1 = ins1;
+    }
+
+    public RichInputNumberSpinbox getJbossManagementCostY1() {
+        return jbossManagementCostY1;
+    }
+
+    public void setS4(RichSeparator s4) {
+        this.s4 = s4;
+    }
+
+    public RichSeparator getS4() {
+        return s4;
+    }
+
+    public void setJbossTotalCostY1(RichInputNumberSpinbox ins2) {
+        this.jbossTotalCostY1 = ins2;
+    }
+
+    public RichInputNumberSpinbox getJbossTotalCostY1() {
+        return jbossTotalCostY1;
+    }
+
+    public void setManagementCostY1(RichInputNumberSpinbox ins1) {
+        this.managementCostY1 = ins1;
+    }
+
+    public RichInputNumberSpinbox getManagementCostY1() {
+        return managementCostY1;
+    }
+
+    public void setS5(RichSeparator s5) {
+        this.s5 = s5;
+    }
+
+    public RichSeparator getS5() {
+        return s5;
+    }
+
+    public void setOtherCostY2(RichInputNumberSpinbox ins1) {
+        this.otherCostY2 = ins1;
+    }
+
+    public RichInputNumberSpinbox getOtherCostY2() {
+        return otherCostY2;
+    }
+
+    public void setS6(RichSeparator s6) {
+        this.s6 = s6;
+    }
+
+    public RichSeparator getS6() {
+        return s6;
+    }
+
+    public void setOtherCostY3(RichInputNumberSpinbox ins1) {
+        this.otherCostY3 = ins1;
+    }
+
+    public RichInputNumberSpinbox getOtherCostY3() {
+        return otherCostY3;
+    }
+
+    public void setS3(RichSeparator s3) {
+        this.s3 = s3;
+    }
+
+    public RichSeparator getS3() {
+        return s3;
+    }
+
+    public void setPb5(RichPanelBox pb5) {
+        this.pb5 = pb5;
+    }
+
+    public RichPanelBox getPb5() {
+        return pb5;
+    }
+
+    public void setPb6(RichPanelBox pb6) {
+        this.pb6 = pb6;
+    }
+
+    public RichPanelBox getPb6() {
+        return pb6;
+    }
+
+    public void setPb7(RichPanelBox pb7) {
+        this.pb7 = pb7;
+    }
+
+    public RichPanelBox getPb7() {
+        return pb7;
+    }
+
+    public void setPb8(RichPanelBox pb8) {
+        this.pb8 = pb8;
+    }
+
+    public RichPanelBox getPb8() {
+        return pb8;
+    }
+
+    public void setPb9(RichPanelBox pb9) {
+        this.pb9 = pb9;
+    }
+
+    public RichPanelBox getPb9() {
+        return pb9;
+    }
+
+    public void setPb10(RichPanelBox pb10) {
+        this.pb10 = pb10;
+    }
+
+    public RichPanelBox getPb10() {
+        return pb10;
+    }
+
+    public void setPgl5(RichPanelGroupLayout pgl5) {
+        this.pgl5 = pgl5;
+    }
+
+    public RichPanelGroupLayout getPgl5() {
+        return pgl5;
+    }
+
+    public void setPgl6(RichPanelGroupLayout pgl6) {
+        this.pgl6 = pgl6;
+    }
+
+    public RichPanelGroupLayout getPgl6() {
+        return pgl6;
     }
 }
