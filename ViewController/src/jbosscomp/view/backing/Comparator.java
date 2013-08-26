@@ -83,10 +83,25 @@ public class Comparator {
     private static BigDecimal costY1;
     private static BigDecimal costY2;
     private static BigDecimal costY3;
+    private static BigDecimal costY4;
+    private static BigDecimal costY5;
+    
     private RichPanelBox pb9;
     private RichPanelBox pb10;
     private RichPanelGroupLayout pgl5;
     private RichPanelGroupLayout pgl6;
+    private RichInputNumberSpinbox suppCostY4;
+    private RichInputNumberSpinbox totalSuppY4;
+    private RichSeparator s7;
+    private RichInputNumberSpinbox otherCostY4;
+    private RichSeparator s8;
+    private RichInputNumberSpinbox totalCostY4;
+    private RichInputNumberSpinbox suppCostY5;
+    private RichInputNumberSpinbox totalSuppY5;
+    private RichSeparator s9;
+    private RichInputNumberSpinbox otherCostY5;
+    private RichSeparator s11;
+    private RichInputNumberSpinbox totalCostY5;
 
 
     public static Object get(String expr) {
@@ -115,26 +130,35 @@ public class Comparator {
         RichInputNumberSpinbox rins1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY1}");
         RichInputNumberSpinbox rins2 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY2}");
         RichInputNumberSpinbox rins3 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY3}");
+        RichInputNumberSpinbox rins4 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY4}");
+        RichInputNumberSpinbox rins5 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY5}");
         
         System.out.println("rins1 = "+rins1.toString());
         System.out.println("rins2 = "+rins2.toString());
         System.out.println("rins3 = "+rins3.toString());
+        System.out.println("rins4 = "+rins4.toString());
+        System.out.println("rins5 = "+rins5.toString());
+
         
         costY1 = new BigDecimal (rins1.getValue().toString());
         costY2 = new BigDecimal (rins2.getValue().toString());
         costY3 = new BigDecimal (rins3.getValue().toString());
+        costY4 = new BigDecimal (rins4.getValue().toString());
+        costY5 = new BigDecimal (rins5.getValue().toString());
     
         System.out.println("costY1 = "+costY1);
         System.out.println("costY2 = "+costY2);
         System.out.println("costY3 = "+costY3);
-        
+        System.out.println("costY4 = "+costY4);
+        System.out.println("costY5 = "+costY5);
+
         
         ArrayList list = new ArrayList();
         String[] rowLabels  = new String[] {"Oracle", "JBoss"};
-        String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3"};
+        String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3", "Year 4", "Year 5"};
         BigDecimal [] [] values = new BigDecimal[][]{
-            {costY1, costY2, costY3},
-            {new BigDecimal(1.0), new BigDecimal(2.0), new BigDecimal(3.0)}
+            {costY1, costY2, costY3, costY4, costY5},
+            {new BigDecimal(1.0), new BigDecimal(2.0), new BigDecimal(3.0), new BigDecimal(4.0), new BigDecimal(5.0)}
             };
         for (int c = 0; c < colLabels.length; c++)
         {
@@ -586,5 +610,101 @@ public class Comparator {
 
     public RichPanelGroupLayout getPgl6() {
         return pgl6;
+    }
+
+    public void setSuppCostY4(RichInputNumberSpinbox ins1) {
+        this.suppCostY4 = ins1;
+    }
+
+    public RichInputNumberSpinbox getSuppCostY4() {
+        return suppCostY4;
+    }
+
+    public void setTotalSuppY4(RichInputNumberSpinbox ins1) {
+        this.totalSuppY4 = ins1;
+    }
+
+    public RichInputNumberSpinbox getTotalSuppY4() {
+        return totalSuppY4;
+    }
+
+    public void setS7(RichSeparator s7) {
+        this.s7 = s7;
+    }
+
+    public RichSeparator getS7() {
+        return s7;
+    }
+
+    public void setOtherCostY4(RichInputNumberSpinbox ins1) {
+        this.otherCostY4 = ins1;
+    }
+
+    public RichInputNumberSpinbox getOtherCostY4() {
+        return otherCostY4;
+    }
+
+    public void setS8(RichSeparator s8) {
+        this.s8 = s8;
+    }
+
+    public RichSeparator getS8() {
+        return s8;
+    }
+
+    public void setTotalCostY4(RichInputNumberSpinbox ins1) {
+        this.totalCostY4 = ins1;
+    }
+
+    public RichInputNumberSpinbox getTotalCostY4() {
+        return totalCostY4;
+    }
+
+    public void setSuppCostY5(RichInputNumberSpinbox ins1) {
+        this.suppCostY5 = ins1;
+    }
+
+    public RichInputNumberSpinbox getSuppCostY5() {
+        return suppCostY5;
+    }
+
+    public void setTotalSuppY5(RichInputNumberSpinbox ins1) {
+        this.totalSuppY5 = ins1;
+    }
+
+    public RichInputNumberSpinbox getTotalSuppY5() {
+        return totalSuppY5;
+    }
+
+    public void setS9(RichSeparator s9) {
+        this.s9 = s9;
+    }
+
+    public RichSeparator getS9() {
+        return s9;
+    }
+
+    public void setOtherCostY5(RichInputNumberSpinbox ins1) {
+        this.otherCostY5 = ins1;
+    }
+
+    public RichInputNumberSpinbox getOtherCostY5() {
+        return otherCostY5;
+    }
+
+    public void setS11(RichSeparator s11) {
+        this.s11 = s11;
+    }
+
+    public RichSeparator getS11() {
+        return s11;
+    }
+
+    public void setTotalCostY5(RichInputNumberSpinbox ins1) {
+        this.totalCostY5 = ins1;
+    }
+
+    public RichInputNumberSpinbox getTotalCostY5() {
+        return totalCostY5;
     }
 }
