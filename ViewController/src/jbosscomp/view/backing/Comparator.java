@@ -51,114 +51,94 @@ public class Comparator {
     private RichInputNumberSpinbox totalSuppY1;
     private RichSeparator s2;
     private RichInputNumberSpinbox totalCostY1;
-    private RichPanelBox pb2;
-    private RichInputNumberSpinbox suppCostY2;
-    private RichInputNumberSpinbox totalSuppY2;
-    private RichSeparator s10;
-    private RichInputNumberSpinbox totalCostY2;
-    private RichPanelBox pb3;
-    private RichInputNumberSpinbox suppCostY3;
-    private RichInputNumberSpinbox totalSuppY3;
-    private RichSeparator s12;
-    private RichInputNumberSpinbox totalCostY3;
     private UIGraph barGraph1;
     private RichPanelBorderLayout pbl1;
 
     private RichPanelBox pb4;
-    private RichPanelBox pb5;
     private RichPanelGroupLayout pgl2;
-    private RichPanelBox pb6;
     private RichPanelGroupLayout pgl4;
     private RichInputNumberSpinbox jbossCoresY1;
     private RichInputNumberSpinbox jbossManagementCostY1;
     private RichSeparator s4;
-    private RichInputNumberSpinbox jbossTotalCostY1;
+    private RichInputNumberSpinbox jbTotalCostY1;
     private RichInputNumberSpinbox managementCostY1;
     private RichSeparator s5;
-    private RichInputNumberSpinbox otherCostY2;
-    private RichSeparator s6;
-    private RichInputNumberSpinbox otherCostY3;
-    private RichSeparator s3;
 
-    private static BigDecimal costY1;
-    private static BigDecimal costY2;
-    private static BigDecimal costY3;
-    private static BigDecimal costY4;
-    private static BigDecimal costY5;
-    
-    private RichPanelBox pb9;
-    private RichPanelBox pb10;
+    private static BigDecimal _totalCostY1;
+    private static BigDecimal _totalSuppCostY1;
+    private static BigDecimal _managementCostY1;
+    private static BigDecimal _licenseCostY1;
+
+    private static BigDecimal _jb_totalCostY1;
+    private static BigDecimal _jb_totalSuppCostY1;
+    private static BigDecimal _jb_managementCostY1;
+
+    private UIGraph lineGraph1;
+    private UIGraph barGraph3;
+    private UIGraph barGraph2;
     private RichPanelGroupLayout pgl5;
     private RichPanelGroupLayout pgl6;
-    private RichInputNumberSpinbox suppCostY4;
-    private RichInputNumberSpinbox totalSuppY4;
-    private RichSeparator s7;
-    private RichInputNumberSpinbox otherCostY4;
-    private RichSeparator s8;
-    private RichInputNumberSpinbox totalCostY4;
-    private RichInputNumberSpinbox suppCostY5;
-    private RichInputNumberSpinbox totalSuppY5;
-    private RichSeparator s9;
-    private RichInputNumberSpinbox otherCostY5;
-    private RichSeparator s11;
-    private RichInputNumberSpinbox totalCostY5;
+    private RichInputNumberSpinbox jbossSubscriptionCostY1;
 
+    private static String[] subscriptionCosts = new String[] {"0", "24000", "48000", "72000", 
+                                                        "90000",  "114000", "138000", "162000",
+                                                        "180000", "204000", "228000", "252000",
+                                                        "270000", "294000", "318000", "342000",
+                                                        "360000", "384000", "408000", "432000",
+                                                        "450000", "474000", "498000", "522000",
+                                                        "540000", "564000", "588000", "612000",
+                                                        "630000", "654000", "678000", "702000",
+                                                        "720000", "744000", "768000", "792000",
+                                                        "810000", "834000", "858000", "882000",
+                                                        "900000", "924000", "948000", "972000",
+                                                        "990000", "1014000","1038000","1062000",
+                                                        "1080000","1104000","1128000","1152000",
+                                                        "1170000","1194000","1218000","1242000",
+                                                        "1260000","1284000","1308000","1332000",
+                                                        "1350000","1374000","1398000","1422000",
+                                                        "1440000","1464000"};
 
     public static Object get(String expr) {
       FacesContext ctx = FacesContext.getCurrentInstance();
       return ctx.getApplication().evaluateExpressionGet(ctx, expr,Object.class);
     }
 
+    public BigDecimal getSubscriptionCost(){
+        RichInputNumberSpinbox rinsTotalJBossCores = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.jbossCoresY1}");
+        BigDecimal totalCores = new BigDecimal(rinsTotalJBossCores.getValue().toString());
+        Double index = totalCores.doubleValue() / 16.0;
+        index = Math.ceil(index);
+        int i = index.intValue();
+        if(i >= subscriptionCosts.length) i = 0;
+        return new BigDecimal(subscriptionCosts[i]);
+    }
+
     public List getTabularData() {       
-        /*
-        if(totalCostY1 == null)costY1 = new Double((String)totalCostY1.getValue());
-        else costY1++;
-
-        if(totalCostY2 == null)costY2 = new Double((String)totalCostY2.getValue());
-        else costY2 = 0.0;
+        RichInputNumberSpinbox rinsTotalCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY1}");
+        RichInputNumberSpinbox rinsSuppTotalCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalSuppY1}");
+        RichInputNumberSpinbox rinsManagementCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.managementCostY1}");
         
-        if(totalCostY3 == null)costY3 = new Double((String)totalCostY3.getValue());
-        else costY3 = 0.0;
-        */
+        RichInputNumberSpinbox jbRinsTotalCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.jbTotalCostY1}");
+        RichInputNumberSpinbox jbRinsSuppTotalCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.jbossSubscriptionCostY1}");
+        RichInputNumberSpinbox jbRinsManagementCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.jbossManagementCostY1}");
         
-        /*
-        DCBindingContainer dcBindings = (DCBindingContainer)BindingContext.getCurrent().getCurrentBindingsEntry(); 
-        DCIteratorBinding iterator = (DCIteratorBinding)dcBindings.get("Comparator"); 
-        String attribute = (String) iterator.getCurrentRow().getAttribute("SomeAttributeName");
-        */
+        _totalSuppCostY1 = new BigDecimal(rinsSuppTotalCostY1.getValue().toString());
+        _totalCostY1 = new BigDecimal(rinsTotalCostY1.getValue().toString());
+        _managementCostY1 = new BigDecimal(rinsManagementCostY1.getValue().toString());
         
-        RichInputNumberSpinbox rins1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY1}");
-        RichInputNumberSpinbox rins2 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY2}");
-        RichInputNumberSpinbox rins3 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY3}");
-        RichInputNumberSpinbox rins4 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY4}");
-        RichInputNumberSpinbox rins5 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalCostY5}");
+        _jb_totalCostY1 = new BigDecimal(jbRinsTotalCostY1.getValue().toString());
+        _jb_totalSuppCostY1 = new BigDecimal(jbRinsSuppTotalCostY1.getValue().toString());
+        _jb_managementCostY1 = new BigDecimal(jbRinsManagementCostY1.getValue().toString());               
         
-        System.out.println("rins1 = "+rins1.toString());
-        System.out.println("rins2 = "+rins2.toString());
-        System.out.println("rins3 = "+rins3.toString());
-        System.out.println("rins4 = "+rins4.toString());
-        System.out.println("rins5 = "+rins5.toString());
-
-        
-        costY1 = new BigDecimal (rins1.getValue().toString());
-        costY2 = new BigDecimal (rins2.getValue().toString());
-        costY3 = new BigDecimal (rins3.getValue().toString());
-        costY4 = new BigDecimal (rins4.getValue().toString());
-        costY5 = new BigDecimal (rins5.getValue().toString());
-    
-        System.out.println("costY1 = "+costY1);
-        System.out.println("costY2 = "+costY2);
-        System.out.println("costY3 = "+costY3);
-        System.out.println("costY4 = "+costY4);
-        System.out.println("costY5 = "+costY5);
-
+        BigDecimal oracleRestYears = _totalSuppCostY1.add(_managementCostY1);
+        BigDecimal jbossRestYears = _jb_totalSuppCostY1.add(_jb_managementCostY1);
         
         ArrayList list = new ArrayList();
         String[] rowLabels  = new String[] {"Oracle", "JBoss"};
         String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3", "Year 4", "Year 5"};
         BigDecimal [] [] values = new BigDecimal[][]{
-            {costY1, costY2, costY3, costY4, costY5},
-            {new BigDecimal(1.0), new BigDecimal(2.0), new BigDecimal(3.0), new BigDecimal(4.0), new BigDecimal(5.0)}
+            {_totalCostY1, oracleRestYears, oracleRestYears, oracleRestYears, oracleRestYears},
+            {_jb_totalCostY1, jbossRestYears, jbossRestYears, jbossRestYears, jbossRestYears}
             };
         for (int c = 0; c < colLabels.length; c++)
         {
@@ -170,6 +150,66 @@ public class Comparator {
         }
         return list;
     }
+
+    public List getJBossTabularData() { 
+
+        RichInputNumberSpinbox jbRinsSuppTotalCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.jbossSubscriptionCostY1}");
+        RichInputNumberSpinbox jbRinsManagementCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.jbossManagementCostY1}");
+        
+        _jb_totalSuppCostY1 = new BigDecimal(jbRinsSuppTotalCostY1.getValue().toString());
+        _jb_managementCostY1 = new BigDecimal(jbRinsManagementCostY1.getValue().toString());
+        
+        ArrayList list = new ArrayList();
+        String[] rowLabels  = new String[] {"Subscription", "Management"};
+        String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3", "Year 4", "Year 5"};
+        
+        BigDecimal [][] values = new BigDecimal[][]{
+            {_jb_totalSuppCostY1, _jb_totalSuppCostY1, _jb_totalSuppCostY1, _jb_totalSuppCostY1, _jb_totalSuppCostY1},
+            {_jb_managementCostY1, _jb_managementCostY1, _jb_managementCostY1, _jb_managementCostY1, _jb_managementCostY1},
+            };
+
+        for (int c = 0; c < colLabels.length; c++)
+        {
+         for (int r = 0; r < rowLabels.length; r++)
+           {                         /* Year */    /* Concepto */
+            list.add (new Object [] {colLabels[c], rowLabels[r], 
+                new Double (values[r][c].doubleValue())});
+           }
+        }
+        return list;
+    }
+    
+    public List getOracleTabularData() { 
+        
+        RichInputNumberSpinbox rinsLicenseCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalLicenseY1}");
+        RichInputNumberSpinbox rinsSuppTotalCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.totalSuppY1}");
+        RichInputNumberSpinbox rinsManagementCostY1 = (RichInputNumberSpinbox)get("#{backingBeanScope.backing_comparator.managementCostY1}");
+                
+        _totalSuppCostY1 = new BigDecimal(rinsSuppTotalCostY1.getValue().toString());
+        _licenseCostY1 = new BigDecimal(rinsLicenseCostY1.getValue().toString());
+        _managementCostY1 = new BigDecimal(rinsManagementCostY1.getValue().toString());
+        
+        ArrayList list = new ArrayList();
+        String[] rowLabels  = new String[] {"License", "Support", "Management"};
+        String[] colLabels  = new String[] {"Year 1", "Year 2", "Year 3", "Year 4", "Year 5"};
+        
+        BigDecimal [][] values = new BigDecimal[][]{
+            {_licenseCostY1, new BigDecimal(0.0), new BigDecimal(0.0), new BigDecimal(0.0), new BigDecimal(0.0)},
+            {_totalSuppCostY1, _totalSuppCostY1, _totalSuppCostY1, _totalSuppCostY1, _totalSuppCostY1},
+            {_managementCostY1, _managementCostY1, _managementCostY1, _managementCostY1, _managementCostY1}
+            };
+
+        for (int c = 0; c < colLabels.length; c++)
+        {
+         for (int r = 0; r < rowLabels.length; r++)
+           {                         /* Year */    /* Concepto */
+            list.add (new Object [] {colLabels[c], rowLabels[r], 
+                new Double (values[r][c].doubleValue())});
+           }
+        }
+        return list;
+    }
+    
     
     public void setF1(RichForm f1) {
         this.f1 = f1;
@@ -254,39 +294,6 @@ public class Comparator {
         return pgl1;
     }
 
-    public void setPb2(RichPanelBox pb2) {
-        this.pb2 = pb2;
-    }
-
-    public RichPanelBox getPb2() {
-        return pb2;
-    }
-
-    public void setPb3(RichPanelBox pb3) {
-        this.pb3 = pb3;
-    }
-
-    public RichPanelBox getPb3() {
-        return pb3;
-    }
-
-
-    public void setS10(RichSeparator s10) {
-        this.s10 = s10;
-    }
-
-    public RichSeparator getS10() {
-        return s10;
-    }
-
-
-    public void setS12(RichSeparator s12) {
-        this.s12 = s12;
-    }
-
-    public RichSeparator getS12() {
-        return s12;
-    }
 
     public void setCoresProcY1(RichInputNumberSpinbox coresProcY1) {
         this.coresProcY1 = coresProcY1;
@@ -358,56 +365,6 @@ public class Comparator {
 
     public RichInputNumberSpinbox getTotalCostY1() {
         return totalCostY1;
-    }
-
-
-    public void setSuppCostY2(RichInputNumberSpinbox suppCostY2) {
-        this.suppCostY2 = suppCostY2;
-    }
-
-    public RichInputNumberSpinbox getSuppCostY2() {
-        return suppCostY2;
-    }
-
-    public void setTotalSuppY2(RichInputNumberSpinbox totalSuppY2) {
-        this.totalSuppY2 = totalSuppY2;
-    }
-
-    public RichInputNumberSpinbox getTotalSuppY2() {
-        return totalSuppY2;
-    }
-
-    public void setTotalCostY2(RichInputNumberSpinbox totalCostY2) {
-        this.totalCostY2 = totalCostY2;
-    }
-
-    public RichInputNumberSpinbox getTotalCostY2() {
-        return totalCostY2;
-    }
-
-
-    public void setSuppCostY3(RichInputNumberSpinbox suppCostY3) {
-        this.suppCostY3 = suppCostY3;
-    }
-
-    public RichInputNumberSpinbox getSuppCostY3() {
-        return suppCostY3;
-    }
-
-    public void setTotalSuppY3(RichInputNumberSpinbox totalSuppY3) {
-        this.totalSuppY3 = totalSuppY3;
-    }
-
-    public RichInputNumberSpinbox getTotalSuppY3() {
-        return totalSuppY3;
-    }
-
-    public void setTotalCostY3(RichInputNumberSpinbox totalCostY3) {
-        this.totalCostY3 = totalCostY3;
-    }
-
-    public RichInputNumberSpinbox getTotalCostY3() {
-        return totalCostY3;
     }
 
 
@@ -492,12 +449,12 @@ public class Comparator {
         return s4;
     }
 
-    public void setJbossTotalCostY1(RichInputNumberSpinbox ins2) {
-        this.jbossTotalCostY1 = ins2;
+    public void setJbTotalCostY1(RichInputNumberSpinbox ins2) {
+        this.jbTotalCostY1 = ins2;
     }
 
-    public RichInputNumberSpinbox getJbossTotalCostY1() {
-        return jbossTotalCostY1;
+    public RichInputNumberSpinbox getJbTotalCostY1() {
+        return jbTotalCostY1;
     }
 
     public void setManagementCostY1(RichInputNumberSpinbox ins1) {
@@ -516,53 +473,6 @@ public class Comparator {
         return s5;
     }
 
-    public void setOtherCostY2(RichInputNumberSpinbox ins1) {
-        this.otherCostY2 = ins1;
-    }
-
-    public RichInputNumberSpinbox getOtherCostY2() {
-        return otherCostY2;
-    }
-
-    public void setS6(RichSeparator s6) {
-        this.s6 = s6;
-    }
-
-    public RichSeparator getS6() {
-        return s6;
-    }
-
-    public void setOtherCostY3(RichInputNumberSpinbox ins1) {
-        this.otherCostY3 = ins1;
-    }
-
-    public RichInputNumberSpinbox getOtherCostY3() {
-        return otherCostY3;
-    }
-
-    public void setS3(RichSeparator s3) {
-        this.s3 = s3;
-    }
-
-    public RichSeparator getS3() {
-        return s3;
-    }
-
-    public void setPb5(RichPanelBox pb5) {
-        this.pb5 = pb5;
-    }
-
-    public RichPanelBox getPb5() {
-        return pb5;
-    }
-
-    public void setPb6(RichPanelBox pb6) {
-        this.pb6 = pb6;
-    }
-
-    public RichPanelBox getPb6() {
-        return pb6;
-    }
 
     public void setPb7(RichPanelBox pb7) {
         this.pb7 = pb7;
@@ -580,20 +490,30 @@ public class Comparator {
         return pb8;
     }
 
-    public void setPb9(RichPanelBox pb9) {
-        this.pb9 = pb9;
+
+    public void setLineGraph1(UIGraph lineGraph1) {
+        this.lineGraph1 = lineGraph1;
     }
 
-    public RichPanelBox getPb9() {
-        return pb9;
+    public UIGraph getLineGraph1() {
+        return lineGraph1;
     }
 
-    public void setPb10(RichPanelBox pb10) {
-        this.pb10 = pb10;
+
+    public void setBarGraph3(UIGraph barGraph3) {
+        this.barGraph3 = barGraph3;
     }
 
-    public RichPanelBox getPb10() {
-        return pb10;
+    public UIGraph getBarGraph3() {
+        return barGraph3;
+    }
+
+    public void setBarGraph2(UIGraph barGraph2) {
+        this.barGraph2 = barGraph2;
+    }
+
+    public UIGraph getBarGraph2() {
+        return barGraph2;
     }
 
     public void setPgl5(RichPanelGroupLayout pgl5) {
@@ -612,99 +532,11 @@ public class Comparator {
         return pgl6;
     }
 
-    public void setSuppCostY4(RichInputNumberSpinbox ins1) {
-        this.suppCostY4 = ins1;
+    public void setJbossSubscriptionCostY1(RichInputNumberSpinbox ins1) {
+        this.jbossSubscriptionCostY1 = ins1;
     }
 
-    public RichInputNumberSpinbox getSuppCostY4() {
-        return suppCostY4;
-    }
-
-    public void setTotalSuppY4(RichInputNumberSpinbox ins1) {
-        this.totalSuppY4 = ins1;
-    }
-
-    public RichInputNumberSpinbox getTotalSuppY4() {
-        return totalSuppY4;
-    }
-
-    public void setS7(RichSeparator s7) {
-        this.s7 = s7;
-    }
-
-    public RichSeparator getS7() {
-        return s7;
-    }
-
-    public void setOtherCostY4(RichInputNumberSpinbox ins1) {
-        this.otherCostY4 = ins1;
-    }
-
-    public RichInputNumberSpinbox getOtherCostY4() {
-        return otherCostY4;
-    }
-
-    public void setS8(RichSeparator s8) {
-        this.s8 = s8;
-    }
-
-    public RichSeparator getS8() {
-        return s8;
-    }
-
-    public void setTotalCostY4(RichInputNumberSpinbox ins1) {
-        this.totalCostY4 = ins1;
-    }
-
-    public RichInputNumberSpinbox getTotalCostY4() {
-        return totalCostY4;
-    }
-
-    public void setSuppCostY5(RichInputNumberSpinbox ins1) {
-        this.suppCostY5 = ins1;
-    }
-
-    public RichInputNumberSpinbox getSuppCostY5() {
-        return suppCostY5;
-    }
-
-    public void setTotalSuppY5(RichInputNumberSpinbox ins1) {
-        this.totalSuppY5 = ins1;
-    }
-
-    public RichInputNumberSpinbox getTotalSuppY5() {
-        return totalSuppY5;
-    }
-
-    public void setS9(RichSeparator s9) {
-        this.s9 = s9;
-    }
-
-    public RichSeparator getS9() {
-        return s9;
-    }
-
-    public void setOtherCostY5(RichInputNumberSpinbox ins1) {
-        this.otherCostY5 = ins1;
-    }
-
-    public RichInputNumberSpinbox getOtherCostY5() {
-        return otherCostY5;
-    }
-
-    public void setS11(RichSeparator s11) {
-        this.s11 = s11;
-    }
-
-    public RichSeparator getS11() {
-        return s11;
-    }
-
-    public void setTotalCostY5(RichInputNumberSpinbox ins1) {
-        this.totalCostY5 = ins1;
-    }
-
-    public RichInputNumberSpinbox getTotalCostY5() {
-        return totalCostY5;
+    public RichInputNumberSpinbox getJbossSubscriptionCostY1() {
+        return jbossSubscriptionCostY1;
     }
 }
